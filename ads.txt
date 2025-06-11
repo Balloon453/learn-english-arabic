@@ -1,2 +1,1 @@
-# ملف مخصص لحجز الإعلانات لاحقًا عبر Google AdSense
-google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
+google.com, pub-2292540012620202, DIRECT, f08c47fec0942fa0
