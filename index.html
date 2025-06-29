@@ -139,6 +139,72 @@
   </div>
 
   <footer>© 2025 فبريكا كورس - جميع الحقوق محفوظة</footer>
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>تعلم الإنجليزية - LearnLang Pro</title>
+  <meta name="description" content="موقع لتعلم اللغة الإنجليزية بالعربية من الصفر بطريقة سهلة وممتعة.">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.ico" />
+  <script defer src="script.js"></script>
+</head>
+<body>
 
+  <header>
+    <h1>👨‍💻 Faraj Dev | LearnLang Pro</h1>
+    <nav>
+      <a href="#">الرئيسية</a>
+      <a href="#">كلمات</a>
+      <a href="#">جمل</a>
+      <a href="#">تمارين</a>
+      <a href="#">تواصل</a>
+    </nav>
+  </header>
+
+  <section class="intro">
+    <h2>ابدأ رحلتك في تعلم الإنجليزية الآن!</h2>
+    <p>تعلم الكلمات والجمل الإنجليزية الأساسية مع النطق والترجمة العربية مجانًا!</p>
+  </section>
+
+  <section class="words">
+    <h3>🗣️ كلمات إنجليزية أساسية</h3>
+    <table>
+      <tr><th>English</th><th>Arabic</th><th>نطق</th></tr>
+      <tr><td>Hello</td><td>مرحبًا</td><td><button onclick="speak('Hello')">🔊</button></td></tr>
+      <tr><td>Thank you</td><td>شكرًا</td><td><button onclick="speak('Thank you')">🔊</button></td></tr>
+      <tr><td>Goodbye</td><td>وداعًا</td><td><button onclick="speak('Goodbye')">🔊</button></td></tr>
+    </table>
+  </section>
+
+  <section class="book">
+    <h3>📘 احصل على كتاب البرمجة PDF</h3>
+    <a href="https://payhip.com/b/vUBAL" class="btn">تحميل من Payhip</a>
+    <a href="https://farajbdallh.gumroad.com/l/eeuuc" class="btn">تحميل من Gumroad</a>
+  </section>
+
+  <section class="contact">
+    <h3>📞 تواصل معنا</h3>
+    <a href="https://wa.me/201091838789">واتساب</a>
+    <a href="mailto:farajbdallh891@gmail.com">إيميل</a>
+  </section>
+
+  <footer>
+    <p>© 2025 فبريكا كورس - جميع الحقوق محفوظة</p>
+    <p><a href="terms.html">الشروط والأحكام</a></p>
+  </footer>
+
+  <!-- بوت شات -->
+  <script>
+    function speak(text) {
+      const msg = new SpeechSynthesisUtterance(text);
+      msg.lang = 'en-US';
+      speechSynthesis.speak(msg);
+    }
+  </script>
+
+</body>
+</html>
 </body>
 </html>
