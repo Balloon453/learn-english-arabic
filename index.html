@@ -2,209 +2,155 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="تعلم الإنجليزية بالعربية بسهولة ومجانًا مع أمثلة واضحة.">
-  <meta name="keywords" content="تعلم الإنجليزية, اللغة الإنجليزية بالعربية, تعليم مجاني, English Arabic">
-  <meta name="author" content="Balloon453">
-  <title>تعلم الإنجليزية بالعربية</title>
-
-  <!-- Google AdSense -->
-  <script async src="="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2292540012620202"
-     crossorigin="anonymous"></script>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Learn Language Pro - تعلم الإنجليزية</title>
+  <meta name="description" content="تعلم اللغة الإنجليزية بالعربية بطريقة ممتعة وسهلة.">
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(to bottom, #f3f4f6, #ffffff);
-      color: #222;
       margin: 0;
-      padding: 0;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background: linear-gradient(to bottom, #f0f4ff, #ffffff);
+      color: #222;
       text-align: center;
       direction: rtl;
     }
-
     header {
-      background-color: #5e60ce;
+      background: linear-gradient(90deg, #6a11cb, #2575fc);
       color: white;
-      padding: 1.5rem;
+      padding: 2rem;
       font-size: 2rem;
       font-weight: bold;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
     }
-
-    h2 {
-      color: #3f37c9;
-      margin-top: 2rem;
+    .section {
+      padding: 2rem 1rem;
     }
-
-    .word {
-      font-size: 1.4rem;
-      margin: 1rem 0;
-      transition: transform 0.3s ease;
+    .word, .sentence {
+      font-size: 1.3rem;
+      margin: 10px 0;
     }
-
-    .word:hover {
-      transform: scale(1.05);
-      color: #5e60ce;
-    }
-
-    .ad-container {
-      margin: 30px auto;
-      max-width: 90%;
-    }
-
-    .btn {
-      display: inline-block;
-      margin: 10px;
-      padding: 12px 25px;
+    button {
+      padding: 5px 12px;
       font-size: 1rem;
-      color: #fff;
-      background-color: #3f37c9;
+      margin-right: 10px;
+      border-radius: 6px;
+      border: none;
+      background-color: #2575fc;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #6a11cb;
+    }
+    .robot-img {
+      width: 200px;
+      margin: 20px auto;
+      display: block;
+    }
+    .btn-link {
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 10px;
+      background-color: #28a745;
+      color: white;
       border-radius: 8px;
       text-decoration: none;
-      transition: background 0.3s ease;
+      font-size: 1.1rem;
     }
-
-    .btn:hover {
-      background-color: #5e60ce;
+    .chatbox {
+      margin: 30px auto;
+      max-width: 400px;
+      background: #f7f7f7;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: left;
     }
-
-    .btn-whatsapp {
-      background-color: #25D366;
+    .chatbox input {
+      width: 80%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
     }
-
+    .chatbox .reply {
+      background: #e0e0ff;
+      padding: 10px;
+      border-radius: 6px;
+      margin-top: 10px;
+      font-weight: bold;
+    }
     footer {
       margin-top: 3rem;
       font-size: 0.9rem;
       color: #555;
       padding: 1rem;
-      border-top: 1px solid #ddd;
+      border-top: 1px solid #ccc;
     }
   </style>
 </head>
 <body>
 
-  <header>تعلم الإنجليزية بالعربية</header>
+<header>👨‍🚀 Learn Language Pro - تعلم الإنجليزية بالعربية</header>
 
-  <h2>ابدأ الآن بطريقة سهلة ومجانية!</h2>
+<!-- صورة روبوت متحركة -->
+<img class="robot-img" src="https://media.giphy.com/media/Q5pZUPUhhQwCIaXZnt/giphy.gif" alt="روبوت متكلم" />
 
-  <!-- كلمات إنجليزية -->
-  <div class="word">Hello = مرحبًا</div>
-  <div class="word">Thank you = شكرًا</div>
-  <div class="word">How are you? = كيف حالك؟</div>
-  <div class="word">Goodbye = وداعًا</div>
-  <div class="word">Yes = نعم / No = لا</div>
-  <div class="word">I love you = أحبك</div>
-  <div class="word">My name is = اسمي هو</div>
-  <div class="word">I am learning English = أنا أتعلم الإنجليزية</div>
-  <div class="word">Where are you from? = من أين أنت؟</div>
-  <div class="word">Can you help me? = هل يمكنك مساعدتي؟</div>
+<section class="section">
+  <h2>🔤 كلمات إنجليزية مع النطق</h2>
+  <div class="word">Hello = مرحبًا <button onclick="speak('Hello')">🔊</button></div>
+  <div class="word">Thank you = شكرًا <button onclick="speak('Thank you')">🔊</button></div>
+  <div class="word">Goodbye = وداعًا <button onclick="speak('Goodbye')">🔊</button></div>
+  <div class="word">My name is = اسمي هو <button onclick="speak('My name is')">🔊</button></div>
+</section>
 
-  <!-- إعلان 1 -->
-  <div class="ad-container">
-    <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-2292540012620202"
-         data-ad-slot="2898280986"
-         data-ad-format="auto"
-         data-full-width-responsive="true"></ins>
-    <script>
-         (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-  </div>
+<section class="section">
+  <h2>📘 احصل على كتاب البرمجة</h2>
+  <p>نسخة PDF لتعلم البرمجة من الصفر بسعر رمزي</p>
+  <a class="btn-link" href="https://payhip.com/b/vUBAL" target="_blank">من Payhip</a>
+  <a class="btn-link" href="https://farajbdallh.gumroad.com/l/eeuuc" target="_blank">من Gumroad</a>
+</section>
 
-  <!-- شراء الكتاب -->
-  <h2>احصل على الكتاب الآن 📘</h2>
-  <p style="font-size: 1.1rem;">نسخة PDF لتعلم البرمجة من الصفر بسعر رمزي</p>
+<section class="section">
+  <h2>📞 تواصل معنا</h2>
+  <a class="btn-link" style="background:#25D366" href="https://wa.me/201066047545" target="_blank">واتساب</a>
+</section>
 
-  <a class="btn" href="https://payhip.com/b/vUBAL" target="_blank">شراء من Payhip</a>
-  <a class="btn" href="https://farajbdallh.gumroad.com/l/eeuuc" target="_blank">شراء من Gumroad</a>
+<section class="section chatbox">
+  <h3>🤖 روبوت الرد الآلي</h3>
+  <input type="text" id="userInput" placeholder="اكتب سؤالك هنا">
+  <button onclick="reply()">أرسل</button>
+  <div id="botReply" class="reply"></div>
+</section>
 
-  <!-- زر واتساب -->
-  <div style="margin-top: 20px;">
-    <a class="btn btn-whatsapp" href="https://wa.me/201066047545" target="_blank">تواصل عبر واتساب</a>
-  </div>
+<footer>© 2025 فبريكا كورس - جميع الحقوق محفوظة</footer>
 
-  <!-- إعلان 2 -->
-  <div class="ad-container">
-    <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-2292540012620202"
-         data-ad-slot="2898280986"
-         data-ad-format="auto"
-         data-full-width-responsive="true"></ins>
-    <script>
-         (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-  </div>
+<!-- نطق إنجليزي -->
+<script>
+function speak(text) {
+  const msg = new SpeechSynthesisUtterance(text);
+  msg.lang = 'en-US';
+  speechSynthesis.speak(msg);
+}
 
-  <footer>© 2025 فبريكا كورس - جميع الحقوق محفوظة</footer>
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>تعلم الإنجليزية - LearnLang Pro</title>
-  <meta name="description" content="موقع لتعلم اللغة الإنجليزية بالعربية من الصفر بطريقة سهلة وممتعة.">
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="favicon.ico" />
-  <script defer src="script.js"></script>
-</head>
-<body>
+// رد آلي بسيط
+function reply() {
+  const input = document.getElementById('userInput').value.toLowerCase();
+  let response = "";
 
-  <header>
-    <h1>👨‍💻 Faraj Dev | LearnLang Pro</h1>
-    <nav>
-      <a href="#">الرئيسية</a>
-      <a href="#">كلمات</a>
-      <a href="#">جمل</a>
-      <a href="#">تمارين</a>
-      <a href="#">تواصل</a>
-    </nav>
-  </header>
+  if (input.includes("الكتاب")) {
+    response = "يمكنك تحميل الكتاب من الروابط أعلاه (Payhip أو Gumroad).";
+  } else if (input.includes("التعلم") || input.includes("اللغة")) {
+    response = "نساعدك في تعلم اللغة الإنجليزية مجانًا مع نطق وترجمة.";
+  } else if (input.includes("السعر")) {
+    response = "سعر الكتاب رمزي: 2 دولار فقط (ما يعادل 100 جنيه تقريبًا).";
+  } else {
+    response = "عذرًا لم أفهم سؤالك، يمكنك التواصل معنا عبر واتساب.";
+  }
 
-  <section class="intro">
-    <h2>ابدأ رحلتك في تعلم الإنجليزية الآن!</h2>
-    <p>تعلم الكلمات والجمل الإنجليزية الأساسية مع النطق والترجمة العربية مجانًا!</p>
-  </section>
+  document.getElementById('botReply').innerText = response;
+}
+</script>
 
-  <section class="words">
-    <h3>🗣️ كلمات إنجليزية أساسية</h3>
-    <table>
-      <tr><th>English</th><th>Arabic</th><th>نطق</th></tr>
-      <tr><td>Hello</td><td>مرحبًا</td><td><button onclick="speak('Hello')">🔊</button></td></tr>
-      <tr><td>Thank you</td><td>شكرًا</td><td><button onclick="speak('Thank you')">🔊</button></td></tr>
-      <tr><td>Goodbye</td><td>وداعًا</td><td><button onclick="speak('Goodbye')">🔊</button></td></tr>
-    </table>
-  </section>
-
-  <section class="book">
-    <h3>📘 احصل على كتاب البرمجة PDF</h3>
-    <a href="https://payhip.com/b/vUBAL" class="btn">تحميل من Payhip</a>
-    <a href="https://farajbdallh.gumroad.com/l/eeuuc" class="btn">تحميل من Gumroad</a>
-  </section>
-
-  <section class="contact">
-    <h3>📞 تواصل معنا</h3>
-    <a href="https://wa.me/201091838789">واتساب</a>
-    <a href="mailto:farajbdallh891@gmail.com">إيميل</a>
-  </section>
-
-  <footer>
-    <p>© 2025 فبريكا كورس - جميع الحقوق محفوظة</p>
-    <p><a href="terms.html">الشروط والأحكام</a></p>
-  </footer>
-
-  <!-- بوت شات -->
-  <script>
-    function speak(text) {
-      const msg = new SpeechSynthesisUtterance(text);
-      msg.lang = 'en-US';
-      speechSynthesis.speak(msg);
-    }
-  </script>
-
-</body>
-</html>
 </body>
 </html>
