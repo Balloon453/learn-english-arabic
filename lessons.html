@@ -1,0 +1,105 @@
+<!DOCTYPE html><html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>دروس اللغة الإنجليزية - Learn Language Pro</title>
+  <meta name="description" content="دروس مبسطة في اللغة الإنجليزية مع الترجمة والنطق بالعربية">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background: linear-gradient(to bottom, #ffffff, #f0f4ff);
+      color: #222;
+      text-align: center;
+      direction: rtl;
+    }
+    header {
+      background: linear-gradient(90deg, #ff5f6d, #ffc371);
+      color: white;
+      padding: 1.5rem;
+      font-size: 2rem;
+      font-weight: bold;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    section {
+      padding: 2rem 1rem;
+    }
+    h2 {
+      color: #ff5f6d;
+      margin-bottom: 1rem;
+    }
+    .lesson {
+      background: #fff0f3;
+      padding: 1rem;
+      margin: 10px auto;
+      max-width: 600px;
+      border-radius: 10px;
+      text-align: right;
+      font-size: 1.1rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    button {
+      margin-right: 8px;
+      padding: 5px 12px;
+      border: none;
+      background-color: #ff5f6d;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #e53950;
+    }
+    .gif {
+      width: 200px;
+      margin: 20px auto;
+      display: block;
+    }
+    footer {
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #555;
+      padding: 1rem;
+      border-top: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+  <header>📚 دروس اللغة الإنجليزية - Learn Language Pro</header>  <section>
+    <h2>💡 الضمائر الشخصية - Personal Pronouns</h2>
+    <img class="gif" src="https://media.giphy.com/media/l0MYC0LajbaPoEADu/giphy.gif" alt="Grammar GIF">
+    <div class="lesson"><button onclick="speakBoth('I = أنا', 'أنا')">🔊</button> I = أنا</div>
+    <div class="lesson"><button onclick="speakBoth('You = أنتَ / أنتِ', 'أنتَ / أنتِ')">🔊</button> You = أنتَ / أنتِ</div>
+    <div class="lesson"><button onclick="speakBoth('He = هو', 'هو')">🔊</button> He = هو</div>
+    <div class="lesson"><button onclick="speakBoth('She = هي', 'هي')">🔊</button> She = هي</div>
+    <div class="lesson"><button onclick="speakBoth('We = نحن', 'نحن')">🔊</button> We = نحن</div>
+    <div class="lesson"><button onclick="speakBoth('They = هم', 'هم')">🔊</button> They = هم</div>
+  </section>  <section>
+    <h2>✅ جمل بسيطة</h2>
+    <img class="gif" src="https://media.giphy.com/media/1X7h7zU8cSKQ0/giphy.gif" alt="Speaking GIF">
+    <div class="lesson"><button onclick="speakBoth('I am happy.', 'أنا سعيد.')">🔊</button> I am happy. = أنا سعيد.</div>
+    <div class="lesson"><button onclick="speakBoth('You are a student.', 'أنت طالب.')">🔊</button> You are a student. = أنت طالب.</div>
+    <div class="lesson"><button onclick="speakBoth('She is my friend.', 'هي صديقتي.')">🔊</button> She is my friend. = هي صديقتي.</div>
+    <div class="lesson"><button onclick="speakBoth('We are at home.', 'نحن في المنزل.')">🔊</button> We are at home. = نحن في المنزل.</div>
+  </section>  <section>
+    <h2>🧠 تعلم الأفعال الأساسية</h2>
+    <img class="gif" src="https://media.giphy.com/media/ZF0qH0WLN8NFe/giphy.gif" alt="Verbs GIF">
+    <div class="lesson"><button onclick="speakBoth('Go = يذهب', 'يذهب')">🔊</button> Go = يذهب</div>
+    <div class="lesson"><button onclick="speakBoth('Eat = يأكل', 'يأكل')">🔊</button> Eat = يأكل</div>
+    <div class="lesson"><button onclick="speakBoth('Drink = يشرب', 'يشرب')">🔊</button> Drink = يشرب</div>
+    <div class="lesson"><button onclick="speakBoth('Sleep = ينام', 'ينام')">🔊</button> Sleep = ينام</div>
+    <div class="lesson"><button onclick="speakBoth('Read = يقرأ', 'يقرأ')">🔊</button> Read = يقرأ</div>
+    <div class="lesson"><button onclick="speakBoth('Write = يكتب', 'يكتب')">🔊</button> Write = يكتب</div>
+  </section>  <footer>© 2025 فبريكا كورس - جميع الحقوق محفوظة</footer>  <script>
+    function speakBoth(en, ar) {
+      const eng = new SpeechSynthesisUtterance(en);
+      eng.lang = 'en-US';
+      const arb = new SpeechSynthesisUtterance(ar);
+      arb.lang = 'ar-SA';
+      speechSynthesis.speak(eng);
+      setTimeout(() => {
+        speechSynthesis.speak(arb);
+      }, en.length * 90);
+    }
+  </script></body>
+</html>
