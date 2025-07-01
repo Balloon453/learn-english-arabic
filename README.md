@@ -1,48 +1,64 @@
-# تعلم الإنجليزية بالعربية 🇬🇧🇸🇦
+# Learn Language Pro 🇬🇧🇸🇦
 
-**learn-english-arabic**  
-موقع بسيط يهدف إلى تعليم اللغة الإنجليزية للعرب بطريقة سهلة ومجانية، مع إمكانية تحقيق ربح سلبي من خلال الإعلانات.
+**Learn English for Arabic speakers** – a simple and free educational site to help beginners learn English words and sentences with audio pronunciation and Arabic translation.
 
-## 🎯 الهدف من المشروع
-- تعليم كلمات وجمل إنجليزية مع ترجمتها إلى العربية.
-- تبسيط التعلم للمبتدئين بطريقة مباشرة وسهلة.
-- تحقيق دخل سلبي من خلال الإعلانات المعروضة في الموقع.
-
-## 📚 محتوى الموقع
-- كلمات وجُمل إنجليزية شائعة.
-- واجهة عربية بالكامل.
-- تصميم خفيف وسريع مناسب لجميع الأجهزة.
-- لا يحتاج تسجيل دخول أو تحميل تطبيق.
-
-## 💡 المميزات
-- مجاني 100%.
-- بسيط وخفيف.
-- قابل للتطوير لاحقًا (إضافة مستويات، صوتيات، اختبارات، الخ...).
-- يمكن إضافة إعلانات Google AdSense أو غيرها بسهولة.
-
-## 🚀 معاينة مباشرة
-🔗 [شاهد الموقع على GitHub Pages](https://balloon453.github.io/learn-english-arabic/)  
-*(بعد تفعيل GitHub Pages)*
-
-## 🛠️ طريقة الاستخدام
-1. حمل المشروع أو انسخه إلى GitHub.
-2. فعّل GitHub Pages من إعدادات المستودع.
-3. أضف الإعلانات إذا أردت (مثل AdSense).
-4. شارك الموقع مع أصدقائك أو على منصات التواصل.
-
-## 📁 الملفات الأساسية
-- `index.html`: الصفحة الرئيسية للموقع.
-- `style.css`: تنسيقات التصميم والألوان.
-- `script.js`: بعض الحركات البسيطة للمحتوى.
-- `ads.txt`: ملف مخصص لإضافة أكواد الإعلانات لاحقًا.
-
-## 📌 ملاحظات
-- هذا المشروع مفتوح المصدر ومتاح للتعديل أو التطوير.
-- لا يحتوي على أي صور أو بيانات شخصية.
-
-## 🧑‍💻 تم بواسطة
-Faraj Factory 
+![Robot Preview](https://media.giphy.com/media/Q5pZUPUhhQwCIaXZnt/giphy.gif)
 
 ---
 
-> 🌟 لا تنسَ وضع ⭐ للمستودع إذا أعجبك المشروع!
+## 🎯 Project Goals
+- Teach basic English words and sentences.
+- Include pronunciation and Arabic translation.
+- Simple UI, fast, responsive and mobile-friendly.
+- Can be monetized through Google AdSense.
+
+---
+
+## 💡 Features
+- 100% Free & Open Source.
+- Built with pure HTML, CSS, and JavaScript.
+- No frameworks, no images folder – lightweight!
+- Arabic-first layout and direction (RTL).
+- Ready to be converted into a mobile app (PWA or WebView).
+- Includes a simple chatbot for auto-replies.
+
+---
+
+## 🖼️ Live Demo  
+🔗 [View Live on GitHub Pages](https://yourusername.github.io/learn-language-pro)  
+*(Replace with your real GitHub username)*
+
+---
+
+## 📘 Get the Programming Book (PDF)
+- [Buy on Payhip](https://payhip.com/b/vUBAL)
+- [Buy on Gumroad](https://farajbdallh.gumroad.com/l/eeuuc)
+
+---
+
+## 📁 Files
+- `index.html` – Main file with UI, pronunciation and chatbot.
+- `style.css` – Clean UI with animations.
+- `script.js` – Handles speech and chatbot responses.
+- `ads.txt` – AdSense support.
+- No `images/` folder used. All graphics are online or inline.
+
+---
+
+## 🛠️ How to Use
+1. Clone or download the repo.
+2. Enable GitHub Pages in your repository settings.
+3. Customize content or add your own English lessons.
+4. Share with friends or embed in your learning platform.
+
+---
+
+## 📞 Contact
+- WhatsApp: [+20 106 604 7545](https://wa.me/201066047545)
+- Email: farajbdallh891@gmail.com
+
+---
+
+> ⭐ If you like the project, don't forget to star it on GitHub!
+
+© 2025 Faraj Factory – All rights reserved.
