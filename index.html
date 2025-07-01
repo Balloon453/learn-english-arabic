@@ -1,38 +1,56 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<!DOCTYPE html><html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Learn Language Pro - تعلم الإنجليزية</title>
-  <meta name="description" content="تعلم اللغة الإنجليزية بالعربية بطريقة ممتعة وسهلة.">
-  <link rel="stylesheet" href="style.css" />
+  <title>تعلم الإنجليزية بالعربية - Learn Language Pro</title>
+  <meta name="description" content="موقع لتعلم اللغة الإنجليزية بالعربية بطريقة سهلة ومجانية مع ترجمة صوتية ومقالات تعليمية ودروس مفصلة.">
+  <link rel="stylesheet" href="style.css">
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, sans-serif;
       background: linear-gradient(to bottom, #eef1ff, #ffffff);
       color: #222;
-      text-align: center;
+      direction: rtl;
     }
     header {
       background: linear-gradient(90deg, #6a11cb, #2575fc);
       color: white;
-      padding: 1.2rem;
+      padding: 1rem;
       font-size: 1.5rem;
+      text-align: center;
       font-weight: bold;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      background: #fff;
+      border-bottom: 1px solid #ccc;
+    }
+    nav a {
+      padding: 10px 20px;
+      text-decoration: none;
+      color: #2575fc;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #6a11cb;
     }
     .section {
       padding: 2rem 1rem;
+      text-align: center;
     }
     .word {
       font-size: 1.2rem;
-      margin: 12px 0;
+      margin: 10px 0;
     }
     button {
-      padding: 6px 12px;
+      padding: 6px 10px;
       font-size: 1rem;
-      margin-right: 10px;
       border-radius: 6px;
       border: none;
       background-color: #2575fc;
@@ -42,66 +60,82 @@
     button:hover {
       background-color: #6a11cb;
     }
-    .robot-img {
-      width: 220px;
-      margin: 30px auto 10px;
-      border-radius: 20px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-    }
-    .btn-link {
-      display: inline-block;
-      padding: 12px 25px;
-      background-color: #28a745;
-      color: white;
-      border-radius: 8px;
-      text-decoration: none;
-      font-size: 1.1rem;
-      margin-top: 15px;
+    .animated-gif {
+      width: 100px;
+      margin: 10px;
     }
     footer {
-      margin-top: 3rem;
+      background: #f4f4f4;
+      padding: 1rem;
       font-size: 0.9rem;
       color: #555;
-      padding: 1rem;
+      text-align: center;
       border-top: 1px solid #ccc;
+    }
+    .footer-links {
+      margin-top: 10px;
+    }
+    .footer-links a {
+      margin: 0 10px;
+      color: #2575fc;
+      text-decoration: none;
+    }
+    .footer-links a:hover {
+      color: #6a11cb;
     }
   </style>
 </head>
-<body>
-
-<header>👨‍🚀 - Learn Language Pro - تعلم الإنجليزية بالعربية</header>
-
-<!-- ✅ صورة متحركة كرتونية باسمك كمطور -->
-<img class="robot-img" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZm52cWN6dzNwZWx2emM3ZGUzMW9tNThhbW54Y3dlMGxqZzBqZmM5NiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/zXmbOaTpbY6mA/giphy.gif" alt="FaragDev98 مطور" />
-<p><strong>FaragDev98</strong> - <span>مطور</span></p>
-
-<section class="section">
-  <h2>🔤 كلمات إنجليزية مع النطق</h2>
+<body><header>👨‍🚀 Learn Language Pro - تعلم الإنجليزية بالعربية</header><nav>
+  <a href="index.html">الصفحة الرئيسية</a>
+  <a href="lessons.html">الدروس</a>
+  <a href="conversations.html">قواعد</a>
+  <a href="المقالات.html">مقال</a>
+  <a href="https://wa.me/201066047545" target="_blank">اشترك في الكورس</a>
+</nav><section class="section">
+  <h2>🔤 كلمات إنجليزية مترجمة مع نطق صوتي</h2>
   <div class="word">Hello = مرحبًا <button onclick="speak('Hello')">🔊</button></div>
   <div class="word">Thank you = شكرًا <button onclick="speak('Thank you')">🔊</button></div>
-  <div class="word">Goodbye = وداعًا <button onclick="speak('Goodbye')">🔊</button></div>
+  <div class="word">How are you? = كيف حالك؟ <button onclick="speak('How are you?')">🔊</button></div>
+  <div class="word">Where is the station? = أين المحطة؟ <button onclick="speak('Where is the station?')">🔊</button></div>
+  <div class="word">What is your name? = ما اسمك؟ <button onclick="speak('What is your name?')">🔊</button></div>
   <div class="word">Nice to meet you = تشرفت بلقائك <button onclick="speak('Nice to meet you')">🔊</button></div>
-  <div class="word">My name is Farag = اسمي فرج <button onclick="speak('My name is Farag')">🔊</button></div>
-</section>
-
-<section class="section">
+</section><section class="section">
+  <h2>🤖 روبوت الرد الآلي</h2>
+  <input type="text" id="userInput" placeholder="اكتب سؤالك هنا" style="padding:10px;width:80%;max-width:400px;border:1px solid #ccc;border-radius:6px;">
+  <button onclick="reply()">أرسل</button>
+  <div id="botReply" style="margin-top:10px;font-weight:bold;"></div>
+</section><section class="section">
   <h2>📘 كتاب تعلم البرمجة</h2>
   <p>نسخة PDF لتعلم البرمجة من الصفر بسعر رمزي</p>
   <a class="btn-link" href="https://payhip.com/b/vUBAL" target="_blank">تحميل من Payhip</a>
-</section>
-
-<footer>
-  <p>© 2025 فبريكا كورس - جميع الحقوق محفوظة</p>
-  <p>للتواصل: واتساب <a href="https://wa.me/201066047545" target="_blank">01066047545</a> | <a href="https://fabrica-courses.netlify.app/" target="_blank">موقعي</a></p>
-</footer>
-
-<script>
+  <a class="btn-link" href="https://faragbdallh.gumroad.com/l/eeuuc" target="_blank">تحميل من Gumroad</a>
+</section><footer>
+  © 2025 فبريكا كورس - جميع الحقوق محفوظة <br>
+  شروط وأحكام الموقع | تواصل: <a href="https://wa.me/201066047545">01066047545</a>
+  <div class="footer-links">
+    <a href="https://fabrica-courses.netlify.app/">موقع FaragDev98</a>
+    <a href="mailto:Faragbdallh891@gmail.com">البريد الإلكتروني</a>
+  </div>
+</footer><script>
 function speak(text) {
   const msg = new SpeechSynthesisUtterance(text);
   msg.lang = 'en-US';
   speechSynthesis.speak(msg);
 }
-</script>
 
-</body>
+function reply() {
+  const input = document.getElementById('userInput').value.toLowerCase();
+  let response = "";
+  if (input.includes("الكتاب")) {
+    response = "يمكنك تحميل الكتاب من الروابط أعلاه.";
+  } else if (input.includes("اللغة") || input.includes("التعلم")) {
+    response = "نساعدك على تعلم الإنجليزية مجانًا بالصوت والترجمة.";
+  } else if (input.includes("السعر")) {
+    response = "سعر الكتاب 2 دولار (حوالي 100 جنيه).";
+  } else {
+    response = "لم أفهم سؤالك تمامًا. تواصل معنا عبر واتساب للمساعدة.";
+  }
+  document.getElementById('botReply').innerText = response;
+}
+</script></body>
 </html>
