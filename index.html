@@ -3,33 +3,30 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>تعلم الإنجليزية بالعربية - Learn Language Pro</title>
-  <meta name="description" content="موقع لتعلم اللغة الإنجليزية بالعربية بطريقة سهلة ومجانية مع ترجمة صوتية ومقالات تعليمية ودروس مفصلة.">
+  <title>درس القواعد - تعلم الإنجليزية</title>
+  <meta name="description" content="تعلم قواعد اللغة الإنجليزية بطريقة مبسطة مع أمثلة صوتية ومترجمة.">
   <link rel="stylesheet" href="style.css">
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, sans-serif;
-      background: linear-gradient(to bottom, #eef1ff, #ffffff);
+      background: linear-gradient(to bottom, #fff, #eef1ff);
       color: #222;
       direction: rtl;
     }
     header {
       background: linear-gradient(90deg, #6a11cb, #2575fc);
       color: white;
-      padding: 0.7rem;
-      font-size: 1.3rem;
+      padding: 1rem;
       text-align: center;
+      font-size: 1.3rem;
       font-weight: bold;
-      position: sticky;
-      top: 0;
-      z-index: 10;
     }
     nav {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      background: #fff;
+      background: #ffffff;
       border-bottom: 1px solid #ccc;
     }
     nav a {
@@ -45,26 +42,14 @@
       padding: 2rem 1rem;
       text-align: center;
     }
-    .word {
-      font-size: 1.2rem;
+    .rule, .example {
+      font-size: 1.1rem;
       margin: 10px 0;
     }
-    button {
-      padding: 6px 10px;
-      font-size: 1rem;
-      border-radius: 6px;
-      border: none;
-      background-color: #2575fc;
-      color: white;
-      cursor: pointer;
-    }
-    button:hover {
-      background-color: #6a11cb;
-    }
-    .animated-gif {
-      width: 200px;
-      margin: 20px auto;
+    .gif {
       display: block;
+      margin: 20px auto;
+      max-width: 240px;
       border-radius: 12px;
     }
     footer {
@@ -75,9 +60,6 @@
       text-align: center;
       border-top: 1px solid #ccc;
     }
-    .footer-links {
-      margin-top: 10px;
-    }
     .footer-links a {
       margin: 0 10px;
       color: #2575fc;
@@ -86,73 +68,80 @@
     .footer-links a:hover {
       color: #6a11cb;
     }
+    button {
+      padding: 4px 8px;
+      font-size: 0.9rem;
+      margin-right: 5px;
+      background-color: #2575fc;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+    button:hover {
+      background-color: #6a11cb;
+    }
   </style>
 </head>
 <body>
 
-<header>👨‍🚀 Learn Language Pro - تعلم الإنجليزية بالعربية</header>
-
-<div style="text-align:center; font-size: 1.1rem; margin-top: 10px;">
-  👤 إعداد المطور <strong>فراج عبدالله</strong> - <strong>Farag Abdullah</strong>
-  <button onclick="speak('Farag Abdullah')">🔊</button>
-</div>
+<header>📚 درس القواعد - أدوات التعريف (A / An / The)</header>
 
 <nav>
   <a href="index.html">الرئيسية</a>
   <a href="الدروس.html">الدروس</a>
   <a href="القواعد.html">القواعد</a>
   <a href="المقالات.html">مقالات</a>
-  <a href="الشروط.html">الشروط</a>
-  <a href="الخصوصية.html">الخصوصية</a>
-  <a href="عن-الموقع.html">عن الموقع</a>
 </nav>
 
-<!-- صورة متحركة واحدة -->
-<img class="animated-gif" src="https://media.giphy.com/media/WFZvB7VIXBgiz3oDXE/giphy.gif" alt="تعلم ممتع">
-
 <section class="section">
-  <h2>🔤 كلمات إنجليزية مترجمة مع نطق</h2>
-  <div class="word">Hello = مرحبًا <button onclick="speak('Hello')">🔊</button></div>
-  <div class="word">Thank you = شكرًا <button onclick="speak('Thank you')">🔊</button></div>
-  <div class="word">Where are you? = أين أنت؟ <button onclick="speak('Where are you')">🔊</button></div>
-  <div class="word">See you later = أراك لاحقًا <button onclick="speak('See you later')">🔊</button></div>
+  <h2>شرح القاعدة</h2>
+  <p class="rule">نستخدم <strong>a</strong> قبل الكلمات التي تبدأ بصوت ساكن، و<strong>an</strong> قبل الكلمات التي تبدأ بصوت متحرك.</p>
+  <p class="rule">أما <strong>the</strong> فنستخدمها عندما نتحدث عن شيء معروف ومحدد.</p>
+  <div class="example">I saw a cat in the garden. = رأيت قطة في الحديقة. <button onclick="speak('I saw a cat in the garden')">🔊</button></div>
+  <div class="example">He ate an apple this morning. = أكل تفاحة هذا الصباح. <button onclick="speak('He ate an apple this morning')">🔊</button></div>
+  <div class="example">Close the door, please. = أغلق الباب من فضلك. <button onclick="speak('Close the door please')">🔊</button></div>
 </section>
 
-<section class="section">
-  <h2>🗣️ جمل يومية مهمة</h2>
-  <div class="word">I want a coffee = أريد قهوة <button onclick="speak('I want a coffee')">🔊</button></div>
-  <div class="word">How much is this? = بكم هذا؟ <button onclick="speak('How much is this')">🔊</button></div>
-  <div class="word">Where is the bathroom? = أين الحمام؟ <button onclick="speak('Where is the bathroom')">🔊</button></div>
-  <div class="word">I don’t understand = لا أفهم <button onclick="speak('I don’t understand')">🔊</button></div>
-</section>
+<img class="gif" src="https://media.giphy.com/media/3o7aD2saalBwwftBIY/giphy.gif" alt="GIF between sections" />
 
 <section class="section">
-  <h2>📘 كتاب تعلم البرمجة</h2>
-  <p>نسخة PDF لتعلم البرمجة من الصفر بسعر رمزي</p>
-  <a class="btn-link" href="https://payhip.com/b/vUBAL" target="_blank" style="background:#28a745;padding:10px 20px;border-radius:8px;color:white;text-decoration:none;">تحميل من Payhip</a>
+  <h2>📖 قواعد إضافية</h2>
+  <div class="rule">1. نستخدم "am / is / are" مع الفاعل لوصف الحالة أو الوظيفة.</div>
+  <div class="example">I am a student. = أنا طالب <button onclick="speak('I am a student')">🔊</button></div>
+
+  <div class="rule">2. نستخدم "can" للتعبير عن القدرة.</div>
+  <div class="example">She can swim. = هي تستطيع السباحة <button onclick="speak('She can swim')">🔊</button></div>
+
+  <div class="rule">3. نستخدم "have / has" للتملك.</div>
+  <div class="example">He has a car. = هو يملك سيارة <button onclick="speak('He has a car')">🔊</button></div>
+
+  <div class="rule">4. نستخدم "do / does" في الأسئلة.</div>
+  <div class="example">Do you like tea? = هل تحب الشاي؟ <button onclick="speak('Do you like tea')">🔊</button></div>
+
+  <div class="rule">5. نستخدم "was / were" للماضي.</div>
+  <div class="example">They were happy. = كانوا سعداء <button onclick="speak('They were happy')">🔊</button></div>
 </section>
 
+<img class="gif" src="https://media.giphy.com/media/26gsspf0Cq3i8i3So/giphy.gif" alt="section break" />
+
 <section class="section">
-  <h2>💡 كورس إتقان اللغة</h2>
-  <p>سجّل الآن لتعلم اللغة الإنجليزية في شهر!</p>
-  <p><strong>السعر:</strong> 5 دولار أو ما يعادله بالجنيه المصري</p>
-  <p>طرق الدفع: فودافون كاش – أورنج كاش – وي كاش – PayPal</p>
-  <a href="https://wa.me/201066047545" target="_blank" style="display:inline-block;padding:10px 20px;background:#2575fc;color:white;border-radius:8px;text-decoration:none;">اشترك الآن</a>
+  <h2>🗣️ جمل شائعة</h2>
+  <div class="example">How are you? = كيف حالك؟ <button onclick="speak('How are you')">🔊</button></div>
+  <div class="example">Nice to meet you = تشرفت بلقائك <button onclick="speak('Nice to meet you')">🔊</button></div>
+  <div class="example">What is your name? = ما اسمك؟ <button onclick="speak('What is your name')">🔊</button></div>
+  <div class="example">I need help = أحتاج إلى مساعدة <button onclick="speak('I need help')">🔊</button></div>
 </section>
 
 <footer>
-  <div>
-    <a href="الشروط.html">الشروط</a> |
-    <a href="الخصوصية.html">الخصوصية</a> |
-    <a href="عن-الموقع.html">عن الموقع</a>
-  </div>
-  <div style="margin-top:10px;">
-    تواصل: <a href="https://wa.me/201066047545">01066047545</a> |
-    <a href="mailto:Faragbdallh891@gmail.com">البريد الإلكتروني</a>
-  </div>
   <div class="footer-links">
-    <a href="https://fabrica-courses.netlify.app/">موقع FaragDev98</a>
+    <a href="الشروط.html">شروط الاستخدام</a> |
+    <a href="الخصوصية.html">سياسة الخصوصية</a>
   </div>
+  <div>
+    تواصل معنا: <a href="https://wa.me/201066047545">01066047545</a> |
+    <a href="mailto:Faragbdallh891@gmail.com">Faragbdallh891@gmail.com</a>
+  </div>
+  <div style="margin-top:10px;">© 2025 جميع الحقوق محفوظة - FaragDev98</div>
 </footer>
 
 <script>
