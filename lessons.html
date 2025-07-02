@@ -1,105 +1,118 @@
-<!DOCTYPE html><html lang="ar" dir="rtl">
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>دروس اللغة الإنجليزية - Learn Language Pro</title>
-  <meta name="description" content="دروس مبسطة في اللغة الإنجليزية مع الترجمة والنطق بالعربية">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>الدروس - تعلم الإنجليزية</title>
+  <meta name="description" content="دروس لتعلم الإنجليزية بالعربية مع ترجمة ونطق صوتي.">
+  <link rel="stylesheet" href="style.css">
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, sans-serif;
-      background: linear-gradient(to bottom, #ffffff, #f0f4ff);
-      color: #222;
-      text-align: center;
+      background: linear-gradient(to bottom, #ffffff, #eef1ff);
       direction: rtl;
+      color: #222;
     }
     header {
-      background: linear-gradient(90deg, #ff5f6d, #ffc371);
+      background: linear-gradient(90deg, #6a11cb, #2575fc);
       color: white;
-      padding: 1.5rem;
-      font-size: 2rem;
+      padding: 1rem;
+      text-align: center;
+      font-size: 1.3rem;
       font-weight: bold;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
     }
-    section {
-      padding: 2rem 1rem;
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      background: #fff;
+      border-bottom: 1px solid #ccc;
     }
-    h2 {
-      color: #ff5f6d;
-      margin-bottom: 1rem;
+    nav a {
+      padding: 10px 15px;
+      text-decoration: none;
+      color: #2575fc;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #6a11cb;
     }
     .lesson {
-      background: #fff0f3;
-      padding: 1rem;
-      margin: 10px auto;
-      max-width: 600px;
-      border-radius: 10px;
-      text-align: right;
+      padding: 2rem 1rem;
+      border-bottom: 1px solid #ddd;
+    }
+    .lesson h2 {
+      color: #6a11cb;
+    }
+    .phrase {
+      margin: 10px 0;
       font-size: 1.1rem;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
     button {
-      margin-right: 8px;
-      padding: 5px 12px;
-      border: none;
-      background-color: #ff5f6d;
+      margin-right: 10px;
+      padding: 5px 10px;
+      font-size: 1rem;
+      background-color: #2575fc;
       color: white;
-      border-radius: 5px;
+      border: none;
+      border-radius: 6px;
       cursor: pointer;
     }
     button:hover {
-      background-color: #e53950;
-    }
-    .gif {
-      width: 200px;
-      margin: 20px auto;
-      display: block;
+      background-color: #6a11cb;
     }
     footer {
-      margin-top: 3rem;
-      font-size: 0.9rem;
-      color: #555;
+      background: #f4f4f4;
       padding: 1rem;
+      text-align: center;
+      color: #555;
+      font-size: 0.9rem;
       border-top: 1px solid #ccc;
     }
   </style>
 </head>
 <body>
-  <header>📚 دروس اللغة الإنجليزية - Learn Language Pro</header>  <section>
-    <h2>💡 الضمائر الشخصية - Personal Pronouns</h2>
-    <img class="gif" src="https://media.giphy.com/media/l0MYC0LajbaPoEADu/giphy.gif" alt="Grammar GIF">
-    <div class="lesson"><button onclick="speakBoth('I = أنا', 'أنا')">🔊</button> I = أنا</div>
-    <div class="lesson"><button onclick="speakBoth('You = أنتَ / أنتِ', 'أنتَ / أنتِ')">🔊</button> You = أنتَ / أنتِ</div>
-    <div class="lesson"><button onclick="speakBoth('He = هو', 'هو')">🔊</button> He = هو</div>
-    <div class="lesson"><button onclick="speakBoth('She = هي', 'هي')">🔊</button> She = هي</div>
-    <div class="lesson"><button onclick="speakBoth('We = نحن', 'نحن')">🔊</button> We = نحن</div>
-    <div class="lesson"><button onclick="speakBoth('They = هم', 'هم')">🔊</button> They = هم</div>
-  </section>  <section>
-    <h2>✅ جمل بسيطة</h2>
-    <img class="gif" src="https://media.giphy.com/media/1X7h7zU8cSKQ0/giphy.gif" alt="Speaking GIF">
-    <div class="lesson"><button onclick="speakBoth('I am happy.', 'أنا سعيد.')">🔊</button> I am happy. = أنا سعيد.</div>
-    <div class="lesson"><button onclick="speakBoth('You are a student.', 'أنت طالب.')">🔊</button> You are a student. = أنت طالب.</div>
-    <div class="lesson"><button onclick="speakBoth('She is my friend.', 'هي صديقتي.')">🔊</button> She is my friend. = هي صديقتي.</div>
-    <div class="lesson"><button onclick="speakBoth('We are at home.', 'نحن في المنزل.')">🔊</button> We are at home. = نحن في المنزل.</div>
-  </section>  <section>
-    <h2>🧠 تعلم الأفعال الأساسية</h2>
-    <img class="gif" src="https://media.giphy.com/media/ZF0qH0WLN8NFe/giphy.gif" alt="Verbs GIF">
-    <div class="lesson"><button onclick="speakBoth('Go = يذهب', 'يذهب')">🔊</button> Go = يذهب</div>
-    <div class="lesson"><button onclick="speakBoth('Eat = يأكل', 'يأكل')">🔊</button> Eat = يأكل</div>
-    <div class="lesson"><button onclick="speakBoth('Drink = يشرب', 'يشرب')">🔊</button> Drink = يشرب</div>
-    <div class="lesson"><button onclick="speakBoth('Sleep = ينام', 'ينام')">🔊</button> Sleep = ينام</div>
-    <div class="lesson"><button onclick="speakBoth('Read = يقرأ', 'يقرأ')">🔊</button> Read = يقرأ</div>
-    <div class="lesson"><button onclick="speakBoth('Write = يكتب', 'يكتب')">🔊</button> Write = يكتب</div>
-  </section>  <footer>© 2025 فبريكا كورس - جميع الحقوق محفوظة</footer>  <script>
-    function speakBoth(en, ar) {
-      const eng = new SpeechSynthesisUtterance(en);
-      eng.lang = 'en-US';
-      const arb = new SpeechSynthesisUtterance(ar);
-      arb.lang = 'ar-SA';
-      speechSynthesis.speak(eng);
-      setTimeout(() => {
-        speechSynthesis.speak(arb);
-      }, en.length * 90);
-    }
-  </script></body>
+
+<header>📘 الدروس التعليمية - تعلم الإنجليزية بالعربية</header>
+
+<nav>
+  <a href="index.html">الصفحة الرئيسية</a>
+  <a href="lessons.html">الدروس</a>
+  <a href="conversations.html">قواعد</a>
+  <a href="المقالات.html">مقال</a>
+  <a href="https://wa.me/201066047545" target="_blank">اشترك في الكورس</a>
+</nav>
+
+<!-- بداية الدروس -->
+<div class="lesson">
+  <h2>الدرس 1: التحيات</h2>
+  <div class="phrase">Hello = مرحبًا <button onclick="speak('Hello')">🔊</button></div>
+  <div class="phrase">Hi = أهلاً <button onclick="speak('Hi')">🔊</button></div>
+  <div class="phrase">Good morning = صباح الخير <button onclick="speak('Good morning')">🔊</button></div>
+  <div class="phrase">Good night = تصبح على خير <button onclick="speak('Good night')">🔊</button></div>
+  <div class="phrase">How are you? = كيف حالك؟ <button onclick="speak('How are you?')">🔊</button></div>
+  <div class="phrase">I’m fine = أنا بخير <button onclick="speak('I am fine')">🔊</button></div>
+  <div class="phrase">Nice to meet you = تشرفت بلقائك <button onclick="speak('Nice to meet you')">🔊</button></div>
+  <div class="phrase">What’s your name? = ما اسمك؟ <button onclick="speak('What is your name?')">🔊</button></div>
+  <div class="phrase">My name is Farag = اسمي فرج <button onclick="speak('My name is Farag')">🔊</button></div>
+  <div class="phrase">Goodbye = وداعًا <button onclick="speak('Goodbye')">🔊</button></div>
+  <!-- أكمل باقي الجمل بنفس النمط حتى 20 جملة -->
+</div>
+
+<!-- يمكنك نسخ القسم أعلاه 10 مرات وتبديل محتوى الجمل لتكوين الدروس 2 إلى 10 -->
+
+<footer>
+  © 2025 فبريكا كورس - جميع الحقوق محفوظة | تواصل: <a href="https://wa.me/201066047545">01066047545</a>
+</footer>
+
+<script>
+function speak(text) {
+  const msg = new SpeechSynthesisUtterance(text);
+  msg.lang = 'en-US';
+  speechSynthesis.speak(msg);
+}
+</script>
+
+</body>
 </html>
