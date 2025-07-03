@@ -10,7 +10,7 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, sans-serif;
-      background: linear-gradient(to bottom, #fff, #eef1ff);
+      background: linear-gradient(to bottom, #eef1ff, #ffffff);
       color: #222;
       direction: rtl;
     }
@@ -19,8 +19,11 @@
       color: white;
       padding: 1rem;
       text-align: center;
-      font-size: 1.3rem;
+      font-size: 1.4rem;
       font-weight: bold;
+      position: sticky;
+      top: 0;
+      z-index: 10;
     }
     nav {
       display: flex;
@@ -54,7 +57,7 @@
     }
     footer {
       background: #f4f4f4;
-      padding: 1rem;
+      padding: 1.5rem 1rem;
       font-size: 0.9rem;
       color: #555;
       text-align: center;
@@ -81,6 +84,9 @@
       background-color: #6a11cb;
     }
   </style>
+
+  <!-- كود إعلانات Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2292540012620202" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -97,6 +103,7 @@
   <h2>شرح القاعدة</h2>
   <p class="rule">نستخدم <strong>a</strong> قبل الكلمات التي تبدأ بصوت ساكن، و<strong>an</strong> قبل الكلمات التي تبدأ بصوت متحرك.</p>
   <p class="rule">أما <strong>the</strong> فنستخدمها عندما نتحدث عن شيء معروف ومحدد.</p>
+
   <div class="example">I saw a cat in the garden. = رأيت قطة في الحديقة. <button onclick="speak('I saw a cat in the garden')">🔊</button></div>
   <div class="example">He ate an apple this morning. = أكل تفاحة هذا الصباح. <button onclick="speak('He ate an apple this morning')">🔊</button></div>
   <div class="example">Close the door, please. = أغلق الباب من فضلك. <button onclick="speak('Close the door please')">🔊</button></div>
@@ -106,19 +113,19 @@
 
 <section class="section">
   <h2>📖 قواعد إضافية</h2>
-  <div class="rule">1. نستخدم "am / is / are" مع الفاعل لوصف الحالة أو الوظيفة.</div>
+  <div class="rule">1. am / is / are مع الفاعل لوصف الحالة أو الوظيفة.</div>
   <div class="example">I am a student. = أنا طالب <button onclick="speak('I am a student')">🔊</button></div>
 
-  <div class="rule">2. نستخدم "can" للتعبير عن القدرة.</div>
+  <div class="rule">2. can للتعبير عن القدرة.</div>
   <div class="example">She can swim. = هي تستطيع السباحة <button onclick="speak('She can swim')">🔊</button></div>
 
-  <div class="rule">3. نستخدم "have / has" للتملك.</div>
+  <div class="rule">3. have / has للتملك.</div>
   <div class="example">He has a car. = هو يملك سيارة <button onclick="speak('He has a car')">🔊</button></div>
 
-  <div class="rule">4. نستخدم "do / does" في الأسئلة.</div>
+  <div class="rule">4. do / does في الأسئلة.</div>
   <div class="example">Do you like tea? = هل تحب الشاي؟ <button onclick="speak('Do you like tea')">🔊</button></div>
 
-  <div class="rule">5. نستخدم "was / were" للماضي.</div>
+  <div class="rule">5. was / were للماضي.</div>
   <div class="example">They were happy. = كانوا سعداء <button onclick="speak('They were happy')">🔊</button></div>
 </section>
 
@@ -130,7 +137,21 @@
   <div class="example">Nice to meet you = تشرفت بلقائك <button onclick="speak('Nice to meet you')">🔊</button></div>
   <div class="example">What is your name? = ما اسمك؟ <button onclick="speak('What is your name')">🔊</button></div>
   <div class="example">I need help = أحتاج إلى مساعدة <button onclick="speak('I need help')">🔊</button></div>
+  <div class="example">My name is Farag Abdullah = اسمي فراج عبدالله <button onclick="speak('My name is Farag Abdullah')">🔊</button></div>
 </section>
+
+<!-- إعلان Google -->
+<div style="text-align:center; margin: 30px 0;">
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="ca-pub-2292540012620202"
+       data-ad-slot="2898280986"
+       data-ad-format="auto"
+       data-full-width-responsive="true"></ins>
+  <script>
+       (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</div>
 
 <footer>
   <div class="footer-links">
