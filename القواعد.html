@@ -1,132 +1,189 @@
-<!DOCTYPE html><html lang="ar" dir="rtl">
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>درس القواعد - أدوات التعريف</title>
-  <meta name="description" content="شرح مبسط لقواعد اللغة الإنجليزية مع تمارين وأمثلة صوتية.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>قواعد اللغة الإنجليزية - FaragDev98</title>
+  <meta name="description" content="تعلم قواعد الإنجليزية الأساسية مع شرح مبسط وأمثلة صوتية.">
+  <link rel="stylesheet" href="style.css">
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, sans-serif;
-      background: linear-gradient(to bottom, #fff2f2, #ffe6f7);
       margin: 0;
-      padding: 0;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background: linear-gradient(to bottom, #fff7f7, #e9e7ff);
       color: #222;
     }
-    header {
-      background: linear-gradient(90deg, #ff416c, #ff4b2b);
+
+    .top-nav {
+      background: #6a11cb;
       color: white;
-      padding: 1rem;
       text-align: center;
-      font-size: 1.5rem;
-      font-weight: bold;
+      padding: 0.6rem;
+      font-size: 1rem;
       position: sticky;
       top: 0;
       z-index: 1000;
     }
-    .content {
-      padding: 20px;
+
+    .top-nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 12px;
+      font-weight: bold;
     }
+
+    .top-nav a:hover {
+      text-decoration: underline;
+    }
+
+    header {
+      background: #2575fc;
+      color: white;
+      padding: 1.2rem;
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    .rules-section {
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
     .rule {
       background: #fff;
-      border-radius: 10px;
-      padding: 15px;
-      margin: 20px 0;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      margin: 20px auto;
+      padding: 1rem;
+      border-radius: 12px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      max-width: 650px;
     }
-    .rule h2 {
-      color: #c70039;
+
+    .rule h3 {
+      color: #e60023;
     }
-    .example {
-      margin: 10px 0;
+
+    .rule p {
       font-size: 1.1rem;
+      line-height: 1.7;
+      margin: 0.4rem 0;
     }
-    .example button {
-      margin-right: 10px;
-      background: #ff416c;
-      color: white;
+
+    .image {
+      display: block;
+      margin: 15px auto;
+      max-width: 200px;
+      border-radius: 12px;
+    }
+
+    button {
+      padding: 8px 14px;
       border: none;
-      padding: 5px 10px;
-      border-radius: 6px;
+      background: #2575fc;
+      color: white;
+      border-radius: 8px;
       cursor: pointer;
+      margin-top: 0.8rem;
     }
+
     footer {
-      background: #f2f2f2;
+      background: #f4f4f4;
       padding: 1rem;
       text-align: center;
       font-size: 0.9rem;
-      color: #555;
+      border-top: 1px solid #ccc;
     }
+
     .footer-links a {
       margin: 0 10px;
-      color: #ff416c;
+      color: #2575fc;
       text-decoration: none;
+    }
+
+    .footer-links a:hover {
+      color: #6a11cb;
     }
   </style>
   <!-- إعلان AdSense -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2292540012620202" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header>📘 قواعد اللغة الإنجليزية - FaragDev98</header>  <div class="content">
+
+  <!-- 🔗 شريط تنقل -->
+  <div class="top-nav">
+    <a href="index.html">🏠 الرئيسية</a>
+    <a href="الدروس.html">📘 الدروس</a>
+    <a href="المقالات.html">📝 المقالات</a>
+    <a href="الشروط.html">📄 الشروط</a>
+    <a href="الخصوصية.html">🔒 الخصوصية</a>
+  </div>
+
+  <!-- 🎓 رأس الصفحة -->
+  <header>📖 قواعد اللغة الإنجليزية مع فراج عبدالله</header>
+
+  <!-- إعلان أعلى -->
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2292540012620202" data-ad-slot="2898280986" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+
+  <!-- 📘 محتوى القواعد -->
+  <section class="rules-section">
+    <img class="image" src="https://media.giphy.com/media/WoD6JZnwap6s8/giphy.gif" alt="Grammar Learning">
+
     <div class="rule">
-      <h2>1. أدوات التعريف A / An / The</h2>
-      <div class="example">I saw a cat. = رأيت قطة <button onclick="speak('I saw a cat')">🔊</button></div>
-      <div class="example">He ate an apple. = أكل تفاحة <button onclick="speak('He ate an apple')">🔊</button></div>
-      <div class="example">Close the door. = أغلق الباب <button onclick="speak('Close the door')">🔊</button></div>
-    </div><div class="rule">
-  <h2>2. فعل to be: am / is / are</h2>
-  <div class="example">I am a developer. = أنا مطور <button onclick="speak('I am a developer')">🔊</button></div>
-  <div class="example">She is a teacher. = هي معلمة <button onclick="speak('She is a teacher')">🔊</button></div>
-</div>
+      <h3>1. أدوات التعريف (A / An / The)</h3>
+      <p>a قبل الصوت الساكن، an قبل الصوت المتحرك، the للشيء المعروف.</p>
+      <p>I saw a cat. = رأيت قطة 🔊</p>
+      <p>He ate an apple. = أكل تفاحة 🔊</p>
+      <p>Close the door. = أغلق الباب 🔊</p>
+    </div>
 
-<div class="rule">
-  <h2>3. التعبير عن الملكية: have / has</h2>
-  <div class="example">I have a phone. = لدي هاتف <button onclick="speak('I have a phone')">🔊</button></div>
-  <div class="example">He has a car. = هو يملك سيارة <button onclick="speak('He has a car')">🔊</button></div>
-</div>
+    <div class="rule">
+      <h3>2. to be: am / is / are</h3>
+      <p>I am a student. = أنا طالب 🔊</p>
+      <p>She is a doctor. = هي طبيبة 🔊</p>
+    </div>
 
-<div class="rule">
-  <h2>4. المضارع المستمر: be + ing</h2>
-  <div class="example">She is reading. = هي تقرأ الآن <button onclick="speak('She is reading')">🔊</button></div>
-  <div class="example">They are playing. = إنهم يلعبون <button onclick="speak('They are playing')">🔊</button></div>
-</div>
+    <div class="rule">
+      <h3>3. have / has</h3>
+      <p>I have a phone. = لدي هاتف 🔊</p>
+      <p>He has a car. = هو يملك سيارة 🔊</p>
+    </div>
 
-<div class="rule">
-  <h2>5. الأفعال المساعدة: do / does</h2>
-  <div class="example">Do you speak English? = هل تتحدث الإنجليزية؟ <button onclick="speak('Do you speak English?')">🔊</button></div>
-  <div class="example">He does not like coffee. = هو لا يحب القهوة <button onclick="speak('He does not like coffee')">🔊</button></div>
-</div>
+    <div class="rule">
+      <h3>4. المضارع المستمر</h3>
+      <p>She is reading. = هي تقرأ 🔊</p>
+      <p>They are playing. = إنهم يلعبون 🔊</p>
+    </div>
 
-<div class="rule">
-  <h2>6. الماضي البسيط: ed</h2>
-  <div class="example">I watched a movie. = شاهدت فيلمًا <button onclick="speak('I watched a movie')">🔊</button></div>
-  <div class="example">She visited her friend. = زارت صديقتها <button onclick="speak('She visited her friend')">🔊</button></div>
-</div>
+    <div class="rule">
+      <h3>5. do / does</h3>
+      <p>Do you speak English? = هل تتحدث الإنجليزية؟ 🔊</p>
+      <p>He does not like coffee. = لا يحب القهوة 🔊</p>
+    </div>
 
-<!-- إعلان -->
-<ins class="adsbygoogle"
-     style="display:block; text-align:center; margin:20px auto;"
-     data-ad-client="ca-pub-2292540012620202"
-     data-ad-slot="2898280986"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    <div class="rule">
+      <h3>6. الماضي البسيط</h3>
+      <p>I watched a movie. = شاهدت فيلم 🔊</p>
+      <p>She visited her friend. = زارت صديقتها 🔊</p>
+    </div>
+  </section>
 
-  </div>  <footer>
+  <!-- إعلان أسفل -->
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2292540012620202" data-ad-slot="2898280986" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+
+  <!-- الفوتر -->
+  <footer>
     <div class="footer-links">
       <a href="index.html">الرئيسية</a> |
+      <a href="الدروس.html">الدروس</a> |
+      <a href="المقالات.html">مقال</a> |
       <a href="الشروط.html">الشروط</a> |
       <a href="الخصوصية.html">الخصوصية</a>
     </div>
-    <div style="margin-top:8px;">
-      تواصل معنا: <a href="https://wa.me/201066047545">01066047545</a> |
-      <a href="mailto:Faragbdallh891@gmail.com">Faragbdallh891@gmail.com</a>
+    <div>
+      جميع الحقوق محفوظة © 2025 - <a href="https://faragdev98.github.io" target="_blank">FaragDev98</a>
     </div>
-    <div style="margin-top:10px;">© 2025 جميع الحقوق محفوظة - FaragDev98</div>
-  </footer>  <script>
-    function speak(text) {
-      const msg = new SpeechSynthesisUtterance(text);
-      msg.lang = 'en-US';
-      speechSynthesis.speak(msg);
-    }
-  </script></body>
+  </footer>
+</body>
 </html>
