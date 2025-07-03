@@ -3,64 +3,81 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>درس القواعد - تعلم الإنجليزية</title>
-  <meta name="description" content="تعلم قواعد اللغة الإنجليزية بطريقة مبسطة مع أمثلة صوتية ومترجمة.">
-  <link rel="stylesheet" href="style.css">
+  <title>Learn Language Pro - الرئيسية</title>
+  <meta name="description" content="منصة تعلم اللغة الإنجليزية من الصفر مع فراج عبدالله.">
+  <link rel="stylesheet" href="style.css" />
   <style>
     body {
-      margin: 0;
       font-family: 'Segoe UI', Tahoma, sans-serif;
-      background: linear-gradient(to bottom, #eef1ff, #ffffff);
+      background: linear-gradient(to bottom, #f8f9ff, #ffe6f0);
+      margin: 0;
+      padding: 0;
       color: #222;
-      direction: rtl;
     }
     header {
       background: linear-gradient(90deg, #6a11cb, #2575fc);
       color: white;
       padding: 1rem;
       text-align: center;
-      font-size: 1.4rem;
+      font-size: 1.5rem;
       font-weight: bold;
       position: sticky;
       top: 0;
-      z-index: 10;
+      z-index: 1000;
     }
-    nav {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      background: #ffffff;
-      border-bottom: 1px solid #ccc;
+    .project-name {
+      animation: fade 2s infinite alternate;
     }
-    nav a {
-      padding: 10px 15px;
-      text-decoration: none;
-      color: #2575fc;
-      font-weight: bold;
+    @keyframes fade {
+      0% { opacity: 1; }
+      100% { opacity: 0.6; }
     }
-    nav a:hover {
-      color: #6a11cb;
-    }
-    .section {
-      padding: 2rem 1rem;
-      text-align: center;
-    }
-    .rule, .example {
-      font-size: 1.1rem;
-      margin: 10px 0;
-    }
-    .gif {
+    .gif-top {
       display: block;
       margin: 20px auto;
-      max-width: 240px;
+      max-width: 260px;
       border-radius: 12px;
+    }
+    .lesson {
+      background: #fff;
+      border-radius: 12px;
+      margin: 1rem;
+      padding: 1.5rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    h2 {
+      color: #e60023;
+      text-align: center;
+    }
+    .phrase {
+      margin: 10px 0;
+      font-size: 1.1rem;
+    }
+    .phrase button {
+      margin-right: 10px;
+      background: #2575fc;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+    .phrase button:hover {
+      background: #6a11cb;
+    }
+    .explain {
+      margin-top: 10px;
+      background: #f8f8f8;
+      padding: 10px;
+      border-radius: 8px;
+      color: #333;
     }
     footer {
       background: #f4f4f4;
-      padding: 1.5rem 1rem;
+      padding: 1rem;
       font-size: 0.9rem;
-      color: #555;
       text-align: center;
+      color: #555;
       border-top: 1px solid #ccc;
     }
     .footer-links a {
@@ -69,109 +86,122 @@
       text-decoration: none;
     }
     .footer-links a:hover {
-      color: #6a11cb;
-    }
-    button {
-      padding: 4px 8px;
-      font-size: 0.9rem;
-      margin-right: 5px;
-      background-color: #2575fc;
-      color: white;
-      border: none;
-      border-radius: 5px;
-    }
-    button:hover {
-      background-color: #6a11cb;
+      color: #e60023;
     }
   </style>
 
-  <!-- كود إعلانات Google AdSense -->
+  <!-- إعلان Google AdSense أعلى الصفحة -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2292540012620202" crossorigin="anonymous"></script>
 </head>
 <body>
 
-<header>📚 درس القواعد - أدوات التعريف (A / An / The)</header>
+  <header><span class="project-name">📚 Learn Language Pro</span></header>
 
-<nav>
-  <a href="index.html">الرئيسية</a>
-  <a href="الدروس.html">الدروس</a>
-  <a href="القواعد.html">القواعد</a>
-  <a href="المقالات.html">مقالات</a>
-</nav>
+  <img class="gif-top" src="https://media.giphy.com/media/3ohhwCvHAAhIhbwD3O/giphy.gif" alt="طالب يذاكر" />
 
-<section class="section">
-  <h2>شرح القاعدة</h2>
-  <p class="rule">نستخدم <strong>a</strong> قبل الكلمات التي تبدأ بصوت ساكن، و<strong>an</strong> قبل الكلمات التي تبدأ بصوت متحرك.</p>
-  <p class="rule">أما <strong>the</strong> فنستخدمها عندما نتحدث عن شيء معروف ومحدد.</p>
-
-  <div class="example">I saw a cat in the garden. = رأيت قطة في الحديقة. <button onclick="speak('I saw a cat in the garden')">🔊</button></div>
-  <div class="example">He ate an apple this morning. = أكل تفاحة هذا الصباح. <button onclick="speak('He ate an apple this morning')">🔊</button></div>
-  <div class="example">Close the door, please. = أغلق الباب من فضلك. <button onclick="speak('Close the door please')">🔊</button></div>
-</section>
-
-<img class="gif" src="https://media.giphy.com/media/3o7aD2saalBwwftBIY/giphy.gif" alt="GIF between sections" />
-
-<section class="section">
-  <h2>📖 قواعد إضافية</h2>
-  <div class="rule">1. am / is / are مع الفاعل لوصف الحالة أو الوظيفة.</div>
-  <div class="example">I am a student. = أنا طالب <button onclick="speak('I am a student')">🔊</button></div>
-
-  <div class="rule">2. can للتعبير عن القدرة.</div>
-  <div class="example">She can swim. = هي تستطيع السباحة <button onclick="speak('She can swim')">🔊</button></div>
-
-  <div class="rule">3. have / has للتملك.</div>
-  <div class="example">He has a car. = هو يملك سيارة <button onclick="speak('He has a car')">🔊</button></div>
-
-  <div class="rule">4. do / does في الأسئلة.</div>
-  <div class="example">Do you like tea? = هل تحب الشاي؟ <button onclick="speak('Do you like tea')">🔊</button></div>
-
-  <div class="rule">5. was / were للماضي.</div>
-  <div class="example">They were happy. = كانوا سعداء <button onclick="speak('They were happy')">🔊</button></div>
-</section>
-
-<img class="gif" src="https://media.giphy.com/media/26gsspf0Cq3i8i3So/giphy.gif" alt="section break" />
-
-<section class="section">
-  <h2>🗣️ جمل شائعة</h2>
-  <div class="example">How are you? = كيف حالك؟ <button onclick="speak('How are you')">🔊</button></div>
-  <div class="example">Nice to meet you = تشرفت بلقائك <button onclick="speak('Nice to meet you')">🔊</button></div>
-  <div class="example">What is your name? = ما اسمك؟ <button onclick="speak('What is your name')">🔊</button></div>
-  <div class="example">I need help = أحتاج إلى مساعدة <button onclick="speak('I need help')">🔊</button></div>
-  <div class="example">My name is Farag Abdullah = اسمي فراج عبدالله <button onclick="speak('My name is Farag Abdullah')">🔊</button></div>
-</section>
-
-<!-- إعلان Google -->
-<div style="text-align:center; margin: 30px 0;">
+  <!-- إعلان -->
   <ins class="adsbygoogle"
-       style="display:block"
+       style="display:block; text-align:center;"
        data-ad-client="ca-pub-2292540012620202"
        data-ad-slot="2898280986"
        data-ad-format="auto"
        data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+
+  <!-- 🟣 الدروس التعليمية -->
+  <section class="lesson">
+    <h2>الدرس 1: التحية</h2>
+    <div class="phrase">Good morning = صباح الخير <button onclick="speak('Good morning')">🔊</button></div>
+    <div class="phrase">How are you? = كيف حالك؟ <button onclick="speak('How are you?')">🔊</button></div>
+    <div class="phrase">I’m fine = أنا بخير <button onclick="speak('I am fine')">🔊</button></div>
+    <div class="explain">شرح: تعلم التحية والتعبير عن الأحوال العامة.</div>
+  </section>
+
+  <section class="lesson">
+    <h2>الدرس 2: الأشياء</h2>
+    <div class="phrase">What is this? = ما هذا؟ <button onclick="speak('What is this?')">🔊</button></div>
+    <div class="phrase">This is a book = هذا كتاب <button onclick="speak('This is a book')">🔊</button></div>
+    <div class="phrase">That is a pen = ذاك قلم <button onclick="speak('That is a pen')">🔊</button></div>
+    <div class="explain">شرح: مفردات للتعرف على الأشياء من حولك.</div>
+  </section>
+
+  <section class="lesson">
+    <h2>الدرس 3: الأصل والجنسية</h2>
+    <div class="phrase">Where are you from? = من أين أنت؟ <button onclick="speak('Where are you from?')">🔊</button></div>
+    <div class="phrase">I am from Egypt = أنا من مصر <button onclick="speak('I am from Egypt')">🔊</button></div>
+    <div class="phrase">Nice to meet you = تشرفت بلقائك <button onclick="speak('Nice to meet you')">🔊</button></div>
+    <div class="explain">شرح: السؤال عن الجنسية والتعارف.</div>
+  </section>
+
+  <section class="lesson">
+    <h2>الدرس 4: الأرقام</h2>
+    <div class="phrase">One, Two, Three = واحد، اثنان، ثلاثة <button onclick="speak('One, Two, Three')">🔊</button></div>
+    <div class="phrase">Ten = عشرة <button onclick="speak('Ten')">🔊</button></div>
+    <div class="phrase">Twenty = عشرون <button onclick="speak('Twenty')">🔊</button></div>
+    <div class="explain">شرح: تعلم الأرقام الأساسية.</div>
+  </section>
+
+  <section class="lesson">
+    <h2>الدرس 5: الألوان</h2>
+    <div class="phrase">Red = أحمر <button onclick="speak('Red')">🔊</button></div>
+    <div class="phrase">Blue = أزرق <button onclick="speak('Blue')">🔊</button></div>
+    <div class="phrase">Green = أخضر <button onclick="speak('Green')">🔊</button></div>
+    <div class="explain">شرح: أسماء الألوان الأكثر استخدامًا.</div>
+  </section>
+
+  <section class="lesson">
+    <h2>الدرس 6: العائلة</h2>
+    <div class="phrase">Father = أب <button onclick="speak('Father')">🔊</button></div>
+    <div class="phrase">Mother = أم <button onclick="speak('Mother')">🔊</button></div>
+    <div class="phrase">Brother = أخ <button onclick="speak('Brother')">🔊</button></div>
+    <div class="explain">شرح: مفردات العائلة.</div>
+  </section>
+
+  <section class="lesson">
+    <h2>الدرس 7: الطعام</h2>
+    <div class="phrase">Bread = خبز <button onclick="speak('Bread')">🔊</button></div>
+    <div class="phrase">Apple = تفاحة <button onclick="speak('Apple')">🔊</button></div>
+    <div class="phrase">Rice = أرز <button onclick="speak('Rice')">🔊</button></div>
+    <div class="explain">شرح: أسماء طعام شائعة.</div>
+  </section>
+
+  <section class="lesson">
+    <h2>الدرس 8: العبارات الشائعة</h2>
+    <div class="phrase">I need help = أحتاج مساعدة <button onclick="speak('I need help')">🔊</button></div>
+    <div class="phrase">What is your name? = ما اسمك؟ <button onclick="speak('What is your name?')">🔊</button></div>
+    <div class="phrase">My name is Farag Abdullah = اسمي فراج عبدالله <button onclick="speak('My name is Farag Abdullah')">🔊</button></div>
+    <div class="explain">شرح: عبارات تساعدك في الحديث.</div>
+  </section>
+
+  <!-- إعلان -->
+  <ins class="adsbygoogle"
+       style="display:block; text-align:center;"
+       data-ad-client="ca-pub-2292540012620202"
+       data-ad-slot="2898280986"
+       data-ad-format="auto"
+       data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+
+  <footer>
+    <div class="footer-links">
+      <a href="index.html">الرئيسية</a> |
+      <a href="الشروط.html">الشروط</a> |
+      <a href="الخصوصية.html">الخصوصية</a>
+    </div>
+    <div style="margin-top:8px;">
+      تواصل معنا: <a href="https://wa.me/201066047545">01066047545</a> | 
+      <a href="mailto:Faragbdallh891@gmail.com">Faragbdallh891@gmail.com</a>
+    </div>
+    <div style="margin-top:10px;">© 2025 جميع الحقوق محفوظة - FaragDev98</div>
+  </footer>
+
   <script>
-       (adsbygoogle = window.adsbygoogle || []).push({});
+    function speak(text) {
+      const msg = new SpeechSynthesisUtterance(text);
+      msg.lang = 'en-US';
+      speechSynthesis.speak(msg);
+    }
   </script>
-</div>
-
-<footer>
-  <div class="footer-links">
-    <a href="الشروط.html">شروط الاستخدام</a> |
-    <a href="الخصوصية.html">سياسة الخصوصية</a>
-  </div>
-  <div>
-    تواصل معنا: <a href="https://wa.me/201066047545">01066047545</a> |
-    <a href="mailto:Faragbdallh891@gmail.com">Faragbdallh891@gmail.com</a>
-  </div>
-  <div style="margin-top:10px;">© 2025 جميع الحقوق محفوظة - FaragDev98</div>
-</footer>
-
-<script>
-function speak(text) {
-  const msg = new SpeechSynthesisUtterance(text);
-  msg.lang = 'en-US';
-  speechSynthesis.speak(msg);
-}
-</script>
 
 </body>
 </html>
