@@ -3,168 +3,221 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>📚 دروس اللغة الإنجليزية مع فراج عبدالله</title>
-  <meta name="description" content="تعلم الإنجليزية بالعربية مع نطق وترجمة وتمارين.">
-  <link rel="stylesheet" href="style.css" />
+  <title>دروس اللغة الإنجليزية - FaragDev98</title>
+  <meta name="description" content="تعلم الإنجليزية مع فراج عبدالله عبر دروس مبسطة وجمل صوتية مترجمة.">
+  <link rel="stylesheet" href="style.css">
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, sans-serif;
-      background: linear-gradient(to bottom, #fff, #f2f3ff);
       margin: 0;
-      padding: 0;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background: linear-gradient(to bottom, #fff7f7, #ffe7f7);
       color: #222;
     }
-    header {
-      background: linear-gradient(90deg, #6a11cb, #2575fc);
+
+    .top-nav {
+      background: #6a11cb;
       color: white;
-      padding: 1.2rem;
       text-align: center;
-      font-size: 1.6rem;
-      font-weight: bold;
+      padding: 0.6rem;
+      font-size: 1rem;
       position: sticky;
       top: 0;
       z-index: 1000;
     }
-    .project-name {
-      text-align: center;
-      font-size: 1.3rem;
+
+    .top-nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 12px;
       font-weight: bold;
-      padding: 10px;
-      background: #8e2de2;
+    }
+
+    .top-nav a:hover {
+      text-decoration: underline;
+    }
+
+    header {
+      background: #e60023;
       color: white;
-      animation: fadein 3s infinite alternate;
+      padding: 1.2rem;
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: bold;
     }
-    @keyframes fadein {
-      0% { opacity: 0.6; }
-      100% { opacity: 1; }
-    }
-    .lesson {
+
+    .lesson-section {
       padding: 2rem 1rem;
-      border-bottom: 1px solid #ccc;
       text-align: center;
     }
-    h2 {
-      color: #e60023;
-      margin-bottom: 1rem;
-    }
-    .phrase {
-      font-size: 1.2rem;
-      margin: 10px 0;
-    }
-    .explain {
-      margin-top: 10px;
-      color: #333;
-      font-size: 1rem;
-    }
-    button {
-      background: #2575fc;
-      color: white;
-      border: none;
-      border-radius: 6px;
-      padding: 6px 12px;
-      cursor: pointer;
-      margin: 4px;
-    }
-    button:hover {
-      background: #6a11cb;
-    }
-    .gif {
-      display: block;
+
+    .lesson {
+      background: #fff;
       margin: 20px auto;
-      max-width: 240px;
+      padding: 1rem;
+      border-radius: 12px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      max-width: 650px;
+    }
+
+    .lesson h3 {
+      color: #6a11cb;
+    }
+
+    .lesson p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      margin: 0.4rem 0;
+    }
+
+    .image {
+      display: block;
+      margin: 15px auto;
+      max-width: 200px;
       border-radius: 12px;
     }
+
+    button {
+      padding: 8px 14px;
+      border: none;
+      background: #6a11cb;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 0.8rem;
+    }
+
     footer {
       background: #f4f4f4;
       padding: 1rem;
-      font-size: 0.9rem;
-      color: #555;
       text-align: center;
+      font-size: 0.9rem;
       border-top: 1px solid #ccc;
     }
+
     .footer-links a {
       margin: 0 10px;
       color: #2575fc;
       text-decoration: none;
     }
+
     .footer-links a:hover {
       color: #6a11cb;
     }
   </style>
-
   <!-- إعلان AdSense -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2292540012620202" crossorigin="anonymous"></script>
 </head>
 <body>
 
-<div class="project-name">🚀 مشروع: Learn Language Pro</div>
-<header>📚 دروس اللغة الإنجليزية مع فراج عبدالله</header>
-
-<!-- إعلان أعلى -->
-<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2292540012620202" data-ad-slot="2898280986" data-ad-format="auto" data-full-width-responsive="true"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-
-<!-- درس 1 -->
-<section class="lesson">
-  <h2>الدرس 1: التحية</h2>
-  <div class="phrase"><button onclick="speak('Good morning')">Good morning = صباح الخير 🔊</button></div>
-  <div class="phrase"><button onclick="speak('How are you?')">How are you? = كيف حالك؟ 🔊</button></div>
-  <div class="phrase"><button onclick="speak('I am fine')">I’m fine = أنا بخير 🔊</button></div>
-  <p class="explain">تعلم التحية والتعبير عن الأحوال العامة.</p>
-</section>
-
-<!-- درس 2 -->
-<section class="lesson">
-  <h2>الدرس 2: الأشياء</h2>
-  <div class="phrase"><button onclick="speak('What is this?')">What is this? = ما هذا؟ 🔊</button></div>
-  <div class="phrase"><button onclick="speak('This is a book')">This is a book = هذا كتاب 🔊</button></div>
-  <div class="phrase"><button onclick="speak('That is a pen')">That is a pen = ذاك قلم 🔊</button></div>
-  <p class="explain">مفردات للتعرف على الأشياء من حولك.</p>
-</section>
-
-<!-- درس 3 -->
-<section class="lesson">
-  <h2>الدرس 3: الأصل والجنسية</h2>
-  <div class="phrase"><button onclick="speak('Where are you from?')">Where are you from? = من أين أنت؟ 🔊</button></div>
-  <div class="phrase"><button onclick="speak('I am from Egypt')">I am from Egypt = أنا من مصر 🔊</button></div>
-  <div class="phrase"><button onclick="speak('Nice to meet you')">Nice to meet you = تشرفت بلقائك 🔊</button></div>
-  <p class="explain">سؤال وتقديم الجنسية والتعارف.</p>
-</section>
-
-<!-- درس 4 -->
-<section class="lesson">
-  <h2>الدرس 4: في السوق</h2>
-  <div class="phrase"><button onclick="speak('How much is this?')">How much is this? = بكم هذا؟ 🔊</button></div>
-  <div class="phrase"><button onclick="speak('It costs five pounds')">It costs five pounds = يكلف خمسة جنيهات 🔊</button></div>
-  <div class="phrase"><button onclick="speak('I want to buy it')">I want to buy it = أريد شراءه 🔊</button></div>
-  <p class="explain">مفردات للتسوق والتعامل مع الأسعار.</p>
-</section>
-
-<!-- صورة توضيحية -->
-<img class="gif" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZGI2NWE0ZmE1YmMzNTFhMzY4NGI5YTZiMzgzM2E0YzMwODkxY2QxNiZjdD1n/kH6CqYgjkuf7k/giphy.gif" alt="animated computer man" />
-
-<!-- إعلان أسفل -->
-<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2292540012620202" data-ad-slot="2898280986" data-ad-format="auto" data-full-width-responsive="true"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-
-<footer>
-  <div class="footer-links">
-    <a href="index.html">الرئيسية</a> |
-    <a href="الشروط.html">الشروط</a> |
-    <a href="الخصوصية.html">الخصوصية</a>
+  <!-- 🔗 شريط تنقل -->
+  <div class="top-nav">
+    <a href="index.html">🏠 الرئيسية</a>
+    <a href="القواعد.html">📖 القواعد</a>
+    <a href="المقالات.html">📝 المقالات</a>
+    <a href="الشروط.html">📄 الشروط</a>
+    <a href="الخصوصية.html">🔒 الخصوصية</a>
   </div>
-  <div>
-    جميع الحقوق محفوظة © 2025 - <a href="https://faragdev98.github.io" target="_blank">FaragDev98</a>
-  </div>
-</footer>
 
-<script>
-function speak(text) {
-  const msg = new SpeechSynthesisUtterance(text);
-  msg.lang = 'en-US';
-  speechSynthesis.speak(msg);
-}
-</script>
+  <!-- 🎓 رأس الصفحة -->
+  <header>📚 دروس اللغة الإنجليزية مع فراج عبدالله</header>
 
+  <!-- إعلان أعلى -->
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2292540012620202" data-ad-slot="2898280986" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+
+  <!-- 📚 محتوى الدروس -->
+  <section class="lesson-section">
+    <img class="image" src="https://media.giphy.com/media/WoD6JZnwap6s8/giphy.gif" alt="تعلم الإنجليزية">
+
+    <!-- الدرس الأول -->
+    <div class="lesson">
+      <h3>الدرس 1: التحية</h3>
+      <p>Good morning = صباح الخير 🔊</p>
+      <p>How are you? = كيف حالك؟ 🔊</p>
+      <p>I’m fine = أنا بخير 🔊</p>
+      <button>📘 شرح الدرس</button>
+    </div>
+
+    <!-- الدرس 2 -->
+    <div class="lesson">
+      <h3>الدرس 2: الأشياء</h3>
+      <p>What is this? = ما هذا؟ 🔊</p>
+      <p>This is a book = هذا كتاب 🔊</p>
+      <p>That is a pen = ذاك قلم 🔊</p>
+      <button>📘 اختبار سريع</button>
+    </div>
+
+    <!-- الدرس 3 -->
+    <div class="lesson">
+      <h3>الدرس 3: الأصل والجنسية</h3>
+      <p>Where are you from? = من أين أنت؟ 🔊</p>
+      <p>I am from Egypt = أنا من مصر 🔊</p>
+      <p>Nice to meet you = تشرفت بلقائك 🔊</p>
+      <button>📘 تمرين</button>
+    </div>
+
+    <!-- الدرس 4 -->
+    <div class="lesson">
+      <h3>الدرس 4: الوظائف</h3>
+      <p>I am a teacher = أنا معلم 🔊</p>
+      <p>She is a doctor = هي طبيبة 🔊</p>
+      <p>He is an engineer = هو مهندس 🔊</p>
+      <button>📘 شرح مفصل</button>
+    </div>
+
+    <!-- الدرس 5 -->
+    <div class="lesson">
+      <h3>الدرس 5: أفراد العائلة</h3>
+      <p>Father = أب 🔊</p>
+      <p>Mother = أم 🔊</p>
+      <p>Brother = أخ 🔊</p>
+      <button>📘 استمع وتدرب</button>
+    </div>
+
+    <!-- الدرس 6 -->
+    <div class="lesson">
+      <h3>الدرس 6: الأماكن</h3>
+      <p>School = مدرسة 🔊</p>
+      <p>Hospital = مستشفى 🔊</p>
+      <p>Market = سوق 🔊</p>
+      <button>📘 تمرين مفردات</button>
+    </div>
+
+    <!-- الدرس 7 -->
+    <div class="lesson">
+      <h3>الدرس 7: الوقت</h3>
+      <p>What time is it? = كم الساعة؟ 🔊</p>
+      <p>It’s ten o’clock = الساعة العاشرة 🔊</p>
+      <p>At 7:30 = الساعة السابعة والنصف 🔊</p>
+      <button>📘 تدرب على النطق</button>
+    </div>
+
+    <!-- الدرس 8 -->
+    <div class="lesson">
+      <h3>الدرس 8: الألوان</h3>
+      <p>Red = أحمر 🔊</p>
+      <p>Blue = أزرق 🔊</p>
+      <p>Green = أخضر 🔊</p>
+      <button>📘 اختبار الألوان</button>
+    </div>
+  </section>
+
+  <!-- إعلان أسفل -->
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2292540012620202" data-ad-slot="2898280986" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+
+  <!-- الفوتر -->
+  <footer>
+    <div class="footer-links">
+      <a href="index.html">الرئيسية</a> |
+      <a href="القواعد.html">القواعد</a> |
+      <a href="المقالات.html">مقال</a> |
+      <a href="الشروط.html">الشروط</a> |
+      <a href="الخصوصية.html">الخصوصية</a>
+    </div>
+    <div>
+      جميع الحقوق محفوظة © 2025 - <a href="https://faragdev98.github.io" target="_blank">FaragDev98</a>
+    </div>
+  </footer>
 </body>
 </html>
