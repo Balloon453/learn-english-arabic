@@ -5,64 +5,74 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Learn Language Pro - الرئيسية</title>
   <meta name="description" content="تعلم الإنجليزية بطرق حديثة وعملية مع FaragDev98." />
-  <link rel="stylesheet" href="style.css" />
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2292540012620202"
-    crossorigin="anonymous"></script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2292540012620202" crossorigin="anonymous"></script>
   <style>
-    body {
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
       font-family: 'Segoe UI', Tahoma, sans-serif;
-      background: linear-gradient(to bottom, #fdfbfb, #ebedff);
+      background: linear-gradient(to bottom, #b28ff9, #e0ccff);
       color: #222;
     }
+
     .top-nav {
       background: #6a11cb;
       color: white;
       text-align: center;
-      padding: 0.5rem;
+      padding: 0.6rem;
       font-size: 1rem;
       position: sticky;
       top: 0;
-      z-index: 1001;
+      z-index: 1000;
     }
+
     .top-nav a {
       color: white;
       text-decoration: none;
       margin: 0 12px;
       font-weight: bold;
     }
+
     .top-nav a:hover {
       text-decoration: underline;
     }
+
     .project-banner {
-      text-align: center;
-      font-size: 1.4rem;
-      font-weight: bold;
-      padding: 1rem;
-      background: #8e2de2;
+      background: #e60023;
       color: white;
-      animation: fadein 2.5s infinite alternate;
+      text-align: center;
+      padding: 1rem;
+      font-size: 1.5rem;
+      font-weight: bold;
+      animation: fadein 2s infinite alternate;
     }
+
     @keyframes fadein {
-      from {
-        opacity: 0.5;
-      }
-      to {
-        opacity: 1;
-      }
+      from { opacity: 0.7; }
+      to { opacity: 1; }
     }
-    .main-section {
+
+    .section {
       padding: 2rem 1rem;
       text-align: center;
     }
-    .main-section h2 {
-      color: #e60023;
+
+    .section h2 {
+      color: #6a11cb;
       font-size: 1.6rem;
+      margin-bottom: 1rem;
     }
-    .main-section p {
+
+    .section p {
       font-size: 1.2rem;
       line-height: 2;
+      margin: 0.7rem 0;
     }
+
     .image {
       max-width: 300px;
       margin: 20px auto;
@@ -70,6 +80,7 @@
       border-radius: 16px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     }
+
     footer {
       background: #f4f4f4;
       padding: 1rem;
@@ -77,19 +88,34 @@
       font-size: 0.9rem;
       border-top: 1px solid #ccc;
     }
+
     .footer-links a {
       margin: 0 10px;
       color: #2575fc;
       text-decoration: none;
     }
+
     .footer-links a:hover {
       color: #6a11cb;
+    }
+
+    .download-btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.8rem 1.6rem;
+      font-size: 1.1rem;
+      background-color: #6a11cb;
+      color: white;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
     }
   </style>
 </head>
 <body>
 
-  <!-- 🔗 شريط الروابط -->
+  <!-- 🔗 شريط التنقل -->
   <div class="top-nav">
     <a href="index.html">🏠 الرئيسية</a>
     <a href="الدروس.html">📚 الدروس</a>
@@ -111,13 +137,50 @@
        data-full-width-responsive="true"></ins>
   <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 
-  <!-- 🧠 المحتوى -->
-  <section class="main-section">
-    <img class="image" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMGNmN3RnZWxnajc0bzRmNjdqcDdsYXMydGFjdzlrbDZoYjIxNzVxMSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/VbnUQpnihPSIgIXuZv/giphy.gif" alt="أطفال يتعلمون" />
+  <!-- ✅ المحتوى -->
+  <section class="section">
+    <img class="image" src="https://media.giphy.com/media/VbnUQpnihPSIgIXuZv/giphy.gif" alt="تعلم الإنجليزية" />
     <h2>ابدأ رحلتك لتعلم الإنجليزية الآن</h2>
-    <p>تعلم الإنجليزية بطريقة مرحة وفعالة للأطفال والناشئين، عبر محتوى تعليمي جذاب يشبه كتب المدرسة الابتدائية.</p>
-    <p>نوفّر دروسًا مترجمة ونطقًا صوتيًا وتمارين تفاعلية تدعم الفهم والاستيعاب.</p>
-    <p>التفاعل مع اللغة يوميًا من خلال موقعنا يساعدك على التطور السريع والاحتراف 💡</p>
+    <p>🌟 تعلم الإنجليزية بطريقة مرحة ومبسطة تناسب الأطفال والمبتدئين.</p>
+    <p>🔊 استمع للنطق الصحيح لكل جملة لتقوية مهاراتك في الاستماع.</p>
+    <p>📚 محتوى يشبه كتب المدرسة، لكنه ممتع وتفاعلي أكثر.</p>
+  </section>
+
+  <section class="section">
+    <h2>📘 ماذا تحتوي الدروس؟</h2>
+    <p>✅ جمل مترجمة من الحياة اليومية.</p>
+    <p>✅ تقسيم دروس بحسب المواضيع: التحية، العائلة، المدرسة، الألوان...</p>
+    <p>✅ كل درس يحتوي على نطق صوتي وسؤال تفاعلي.</p>
+  </section>
+
+  <section class="section">
+    <h2>📖 قسم القواعد</h2>
+    <p>✍️ تعلّم أساسيات الجرامر بأسلوب بسيط وسلس.</p>
+    <p>📌 أمثلة واقعية تساعدك على التطبيق.</p>
+    <p>💡 لكل قاعدة صفحة خاصة وتدريبات بعد كل درس.</p>
+  </section>
+
+  <section class="section">
+    <h2>📝 مقالات تعليمية</h2>
+    <p>🧠 مقالات خفيفة تشرح أسرار تعلّم اللغة بسهولة.</p>
+    <p>🗣️ نصائح لتحسين مهارات النطق والاستماع.</p>
+    <p>🕒 كل مقال لا يتطلب أكثر من 5 دقائق قراءة!</p>
+  </section>
+
+  <section class="section">
+    <h2>🔐 الشروط والخصوصية</h2>
+    <p>🔒 نحن نحترم خصوصيتك ولا نجمع أي بيانات حساسة.</p>
+    <p>📃 الشروط واضحة وسهلة القراءة لجميع الأعمار.</p>
+    <p>✅ الهدف هو التعلم الآمن والمريح بدون قلق.</p>
+  </section>
+
+  <!-- 📲 تحميل التطبيق -->
+  <section class="section">
+    <h2>📲 حمل التطبيق</h2>
+    <p>استمتع بكل الدروس والمحتوى في تطبيق خفيف وسريع.</p>
+    <p>اعمل دون اتصال بالإنترنت واستمع للنطق في أي وقت.</p>
+    <a href="https://play.google.com/store/apps/details?id=اسم_التطبيق" class="download-btn">⬇️ تحميل التطبيق</a>
+    <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #555;">* قريبًا على Google Play</p>
   </section>
 
   <!-- إعلان أسفل -->
@@ -129,7 +192,7 @@
        data-full-width-responsive="true"></ins>
   <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 
-  <!-- ⬇️ الفوتر -->
+  <!-- الفوتر -->
   <footer>
     <div class="footer-links">
       <a href="الدروس.html">الدروس</a> |
