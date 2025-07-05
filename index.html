@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-<head><link rel="manifest" href="manifest.json" />
+<head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Learn Language Pro - الرئيسية</title>
-  <meta name="description" content="تعلم الإنجليزية بطرق حديثة وعملية مع FaragDev98." />
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2292540012620202" crossorigin="anonymous"></script>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+  <meta name="description" content="تعلم الإنجليزية بطرق حديثة وعملية للمبتدئين مع FaragDev98 - تعلم إنجليزي بالعربية مجانًا." />
+  <meta name="theme-color" content="#6b46c1" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" type="image/png" href="icon-512.png" />
 
+  <!-- إعلان AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2292540012620202" crossorigin="anonymous"></script>
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       font-family: 'Segoe UI', Tahoma, sans-serif;
       background: linear-gradient(to bottom, #b28ff9, #e0ccff);
@@ -37,9 +38,7 @@
       font-weight: bold;
     }
 
-    .top-nav a:hover {
-      text-decoration: underline;
-    }
+    .top-nav a:hover { text-decoration: underline; }
 
     .project-banner {
       background: #e60023;
@@ -51,9 +50,21 @@
       animation: fadein 2s infinite alternate;
     }
 
-    @keyframes fadein {
-      from { opacity: 0.7; }
-      to { opacity: 1; }
+    .animated-text {
+      text-align: center;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #6a11cb;
+      margin-top: 10px;
+      animation: fadeinout 2.5s infinite;
+    }
+
+    @keyframes fadein { from { opacity: 0.7; } to { opacity: 1; } }
+
+    @keyframes fadeinout {
+      0% { opacity: 0; }
+      50% { opacity: 1; }
+      100% { opacity: 0; }
     }
 
     .section {
@@ -113,6 +124,7 @@
     }
   </style>
 </head>
+
 <body>
 
   <!-- 🔗 شريط التنقل -->
@@ -127,6 +139,7 @@
 
   <!-- 🎯 بانر -->
   <div class="project-banner">🚀 Learn Language Pro - تعلم الإنجليزية بأسلوب ممتع!</div>
+  <div class="animated-text">Farag مطور 98</div>
 
   <!-- إعلان أعلى -->
   <ins class="adsbygoogle"
@@ -174,22 +187,15 @@
     <p>✅ الهدف هو التعلم الآمن والمريح بدون قلق.</p>
   </section>
 
-  <!-- 📲 تحميل التطبيق -->
+  <!-- تحميل التطبيق فقط من Galaxy -->
   <section class="section">
     <h2>📲 حمل التطبيق</h2>
     <p>استمتع بكل الدروس والمحتوى في تطبيق خفيف وسريع.</p>
     <p>اعمل دون اتصال بالإنترنت واستمع للنطق في أي وقت.</p>
-    <a href="https://play.google.com/store/apps/details?id=اسم_التطبيق" class="download-btn">⬇️ تحميل التطبيق</a>
-    <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #555;">* قريبًا على Google Play</p>
+    <a href="https://galaxy.store/yourappname" class="download-btn" target="_blank">⬇️ تحميل من Galaxy Store</a>
+    <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #555;">* متاح على متجر سامسونج الرسمي</p>
   </section>
-<!-- 📲 تحميل التطبيق -->
-<section class="section">
-  <h2>📲 حمل التطبيق</h2>
-  <p>استمتع بكل الدروس والمحتوى في تطبيق خفيف وسريع.</p>
-  <p>اعمل دون اتصال بالإنترنت واستمع للنطق في أي وقت.</p>
-  <a href="https://galaxy.store/yourappname" class="download-btn" target="_blank">⬇️ تحميل من Galaxy Store</a>
-  <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #555;">* متاح على متجر سامسونج الرسمي</p>
-</section>
+
   <!-- إعلان أسفل -->
   <ins class="adsbygoogle"
        style="display:block"
@@ -204,7 +210,7 @@
     <div class="footer-links">
       <a href="الدروس.html">الدروس</a> |
       <a href="القواعد.html">القواعد</a> |
-      <a href="المقالات.html">مقال</a> |
+      <a href="المقالات.html">مقالات</a> |
       <a href="الشروط.html">الشروط</a> |
       <a href="الخصوصية.html">الخصوصية</a>
     </div>
