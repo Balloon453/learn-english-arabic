@@ -1,10 +1,13 @@
 {
-  "name": "تعلم الإنجليزية بالعربية",
-  "short_name": "تعلم إنجليزي",
+  "name": "تعلم الإنجليزية بالعربية - FaragDev98",
+  "short_name": "Farag English",
+  "lang": "ar",
+  "dir": "rtl",
   "start_url": "/index.html",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#6b46c1",
+  "theme_color": "#6a11cb",
+  "orientation": "portrait",
   "icons": [
     {
       "src": "icons/icon-192.png",
