@@ -214,6 +214,15 @@
        data-full-width-responsive="true"></ins>
   <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 
+  <!-- ✅ تسجيل Service Worker -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js')
+        .then(() => console.log("✅ تم تسجيل Service Worker"))
+        .catch(err => console.error("❌ فشل تسجيل SW:", err));
+    }
+  </script>
+
   <!-- الفوتر -->
   <footer>
     <div class="footer-links">
@@ -227,15 +236,6 @@
       جميع الحقوق محفوظة © 2025 - <a href="https://faragdev98.github.io" target="_blank">FaragDev98</a>
     </div>
   </footer>
-<!-- ✅ تسجيل Service Worker -->
-  <script>
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('service-worker.js')
-        .then(() => console.log('✅ تم تسجيل Service Worker بنجاح'))
-        .catch(error => console.error('❌ فشل في تسجيل Service Worker:', error));
-    }
-  </script>
-</body>
-</html>
+
 </body>
 </html>
