@@ -1,62 +1,47 @@
-const CACHE_NAME = 'learn-english-v1';
-const OFFLINE_URL = 'index.html';
-
-const ASSETS_TO_CACHE = [
-  'index.html',
-  'style.css',
-  'manifest.json',
-  'icons/icon-192.png',
-  'icons/icon-512.png',
-  'icons/icon-192-maskable.png',
-  'icons/icon-512-maskable.png',
-  'الدروس.html',
-  'القواعد.html',
-  'المقالات.html',
-  'الخصوصية.html',
-  'الشروط.html',
-  // أضف أي ملفات صوت أو صور تستخدمها هنا
+const CACHE_NAME = "english-arabic-cache-v1";
+const FILES_TO_CACHE = [
+  "/Learn-English-in-Arabic-/",
+  "/Learn-English-in-Arabic-/index.html",
+  "/Learn-English-in-Arabic-/style.css",
+  "/Learn-English-in-Arabic-/manifest.json",
+  "/Learn-English-in-Arabic-/icons/icon-192.png",
+  "/Learn-English-in-Arabic-/icons/icon-512.png",
+  "/Learn-English-in-Arabic-/icons/icon-192-maskable.png",
+  "/Learn-English-in-Arabic-/icons/icon-512-maskable.png",
+  "/Learn-English-in-Arabic-/الدروس.html",
+  "/Learn-English-in-Arabic-/القواعد.html",
+  "/Learn-English-in-Arabic-/المقالات.html",
+  "/Learn-English-in-Arabic-/الشروط.html",
+  "/Learn-English-in-Arabic-/الخصوصية.html"
 ];
 
-self.addEventListener('install', (event) => {
+// التثبيت
+self.addEventListener("install", event => {
   event.waitUntil(
-    caches.open(CACHE_NAME).then((cache) => cache.addAll(ASSETS_TO_CACHE))
+    caches.open(CACHE_NAME).then(cache => cache.addAll(FILES_TO_CACHE))
   );
   self.skipWaiting();
 });
 
-self.addEventListener('activate', (event) => {
+// التفعيل
+self.addEventListener("activate", event => {
   event.waitUntil(
-    caches.keys().then((cacheNames) =>
-      Promise.all(
-        cacheNames.map((name) => {
-          if (name !== CACHE_NAME) {
-            return caches.delete(name);
-          }
-        })
-      )
+    caches.keys().then(keys =>
+      Promise.all(keys.filter(k => k !== CACHE_NAME).map(k => caches.delete(k)))
     )
   );
   self.clients.claim();
 });
 
-self.addEventListener('fetch', (event) => {
-  const url = new URL(event.request.url);
-
-  // ❌ تجاهل الإعلانات نهائيًا (ما تتحمل في الكاش)
-  if (url.hostname.includes('googlesyndication.com') || url.hostname.includes('googleads.g.doubleclick.net')) {
-    return;
-  }
-
+// الفetch: نجيب من النت أولاً ثم الكاش
+self.addEventListener("fetch", event => {
   event.respondWith(
-    caches.match(event.request).then((cached) => {
-      return (
-        cached ||
-        fetch(event.request).catch(() => {
-          if (event.request.mode === 'navigate') {
-            return caches.match(OFFLINE_URL);
-          }
-        })
-      );
-    })
+    fetch(event.request)
+      .then(response => {
+        const resClone = response.clone();
+        caches.open(CACHE_NAME).then(cache => cache.put(event.request, resClone));
+        return response;
+      })
+      .catch(() => caches.match(event.request))
   );
 });
