@@ -5,103 +5,82 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>FaragDev98 - الصفحة الرئيسية</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
     body {
+      margin: 0;
       font-family: "Segoe UI", sans-serif;
-      background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
-      color: #222;
-      line-height: 1.6;
-    }
-
-    header {
-      background: linear-gradient(90deg, #6a11cb, #2575fc);
-      color: white;
-      padding: 20px 0;
-      text-align: center;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-
-    header h1 {
-      margin-bottom: 10px;
-      font-size: 2rem;
-    }
-
-    nav {
-      margin-top: 10px;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    .container {
-      padding: 40px 20px;
-      max-width: 800px;
-      margin: auto;
-    }
-
-    .hero {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-
-    .hero h2 {
-      font-size: 2rem;
-      margin-bottom: 10px;
+      background: linear-gradient(135deg, #f2f2f2, #e0e0ff);
       color: #333;
     }
 
-    .hero p {
-      font-size: 1.1rem;
-      color: #555;
+    header {
+      background: #4a00e0;
+      background: linear-gradient(to right, #8e2de2, #4a00e0);
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.2em;
+      letter-spacing: 1px;
+    }
+
+    main {
+      padding: 30px 20px;
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+    }
+
+    h2 {
+      color: #4a00e0;
+      margin-top: 0;
+    }
+
+    p {
+      line-height: 1.8;
+      font-size: 1.1em;
     }
 
     .cta-button {
       display: inline-block;
-      margin-top: 20px;
+      margin-top: 25px;
       padding: 12px 24px;
-      background-color: #6a11cb;
+      font-size: 1.1em;
+      background: #4a00e0;
       color: white;
       border: none;
       border-radius: 8px;
-      font-size: 1rem;
       cursor: pointer;
-      transition: background-color 0.3s ease;
+      transition: background 0.3s ease;
       text-decoration: none;
     }
 
     .cta-button:hover {
-      background-color: #5014a9;
+      background: #6a00d2;
     }
 
     footer {
-      background-color: #222;
-      color: white;
-      padding: 20px 0;
+      margin-top: 40px;
+      padding: 20px;
       text-align: center;
-      margin-top: 50px;
-    }
-
-    footer p {
-      margin: 5px 0;
+      background: #f8f8f8;
+      font-size: 0.9em;
+      color: #666;
+      border-top: 1px solid #ddd;
     }
 
     @media (max-width: 600px) {
-      nav a {
-        display: block;
-        margin: 10px 0;
+      header h1 {
+        font-size: 1.5em;
+      }
+
+      main {
+        padding: 20px 15px;
       }
     }
   </style>
@@ -110,36 +89,24 @@
 
   <header>
     <h1>FaragDev98</h1>
-    <nav>
-      <a href="#">الرئيسية</a>
-      <a href="#about">من أنا</a>
-      <a href="#contact">تواصل</a>
-    </nav>
   </header>
 
-  <div class="container">
-    <section class="hero">
-      <h2>مرحبًا بك في موقعي الشخصي</h2>
-      <p>أنا فراج عبدالله، مطور مواقع وتطبيقات. أشارك معكم أعمالي، ومقالاتي، وكتبي التعليمية.</p>
-      <a href="https://wa.me/201091838789" class="cta-button">اشترك الآن عبر واتساب</a>
-    </section>
+  <main>
+    <h2>مرحبًا بك في موقعي</h2>
+    <p>
+      هذا الموقع هو منصتي الرسمية لعرض مشاريعي ومقالاتي ودوراتي في عالم البرمجة والتصميم.
+      يمكنك تصفح المحتوى بسهولة من أي جهاز، وستجد دائمًا ما يفيدك سواء كنت مبتدئًا أو محترفًا.
+    </p>
 
-    <section id="about">
-      <h2>من أنا؟</h2>
-      <p>مطور ومصمم واجهات مستخدم بخبرة في HTML, CSS, JavaScript. أقدّم محتوى تعليمي للمبتدئين وأسعى لنشر العلم بأسلوب بسيط وسهل.</p>
-    </section>
+    <p>
+      تصفح الأقسام المختلفة للتعرف على مقالات HTML وCSS وJavaScript وشراء كتابي التعليمي خطوة بخطوة.
+    </p>
 
-    <section id="contact" style="margin-top: 40px;">
-      <h2>تواصل معي</h2>
-      <p>رقم الهاتف: 01091838789</p>
-      <p>واتساب: <a href="https://wa.me/201091838789">اضغط هنا</a></p>
-      <p>فيسبوك: <a href="https://facebook.com" target="_blank">صفحتي على فيسبوك</a></p>
-      <p>البريد الإلكتروني: faragdev98@gmail.com</p>
-    </section>
-  </div>
+    <a href="contact.html" class="cta-button">تواصل معي الآن</a>
+  </main>
 
   <footer>
-    <p>&copy; 2025 FaragDev98 - جميع الحقوق محفوظة</p>
+    جميع الحقوق محفوظة &copy; 2025 - FaragDev98
   </footer>
 
 </body>
